@@ -1,4 +1,3 @@
-<f1r>      <! $Q=A $P=A $F=a $B=1 $I=T $L=A $H=1 $C=1 $X=V>
 <f1r.1,@P0>       <%>fachys ykal ar ataiin shol shory cthres y kor sholdy
 <f1r.2,+P0>       sory ckhar ory kair chtaiin shar ase cthar cthardan
 <f1r.3,+P0>       syaiir sheky or ykaiin shod cthoary cthes daraiin sy
@@ -27,7 +26,6 @@
 <f1r.26,+P0>      dcheo shody koshey cthy okchey keey keeydal chtor
 <f1r.27,+P0>      ?eo? chol chok choty chotey
 <f1r.28,=Pt>      dchaiin<$>
-<f1v>      <! $Q=A $P=B $F=a $B=1 $I=H $L=A $H=1 $C=1 $X=C>
 <f1v.1,@P0>       <%>kchsy chydaiin ol <->oltchey char cfharam
 <f1v.2,+P0>       yteey char or ochy <->dcho lkody okodar chody
 <f1v.3,+P0>       dackhy ckhockhy shy <->dksheey cthy kotchody dal
@@ -38,7 +36,6 @@
 <f1v.8,+P0>       okolshol kolkechy chol ky <->chol cthol chody chol daiin
 <f1v.9,+P0>       shor okol chol dolky dar <->shol dchor otcho dar shody
 <f1v.10,+P0>      taor chotchey dal chody <->schody pol chodar<$>
-<f2r>      <! $Q=A $P=C $F=b $B=2 $I=H $L=A $H=1 $C=1>
 <f2r.1,@P0>       <%>kydainy ypchol daiin otchal <->ypchaiin ckholsy
 <f2r.2,+P0>       dorchory <->chkar s <->shor cthy cto
 <f2r.3,+P0>       qotaiin <->cthey y <->chor chy ydy <->chaiin
@@ -52,7 +49,6 @@
 <f2r.11,+P0>      ychain dal chy dalor shan dan<->olsaiin sheey ckhor
 <f2r.12,+P0>      okol chy chor cthor yor an chan <->saiin chety chyky sal
 <f2r.13,+P0>      sho ykeey chey daiin chcthy<$>
-<f2v>      <! $Q=A $P=D $F=b $B=2 $I=H $L=A $H=1 $C=1 $X=O>
 <f2v.1,@P0>       <%>kooiin cheopchor otaiinodain chor <->dair shty
 <f2v.2,+P0>       kchokchy sho shol qotcho loeees qoty <->chor daiin
 <f2v.3,+P0>       otchy chor lshy chol chody chodain <->chcthy daiin
@@ -61,7 +57,6 @@
 <f2v.6,+P0>       dor chol chor chol keol chy chty <->daiin otchor chan
 <f2v.7,+P0>       daiin chotchey qoteeey chokeos <->chees chr cheaiin
 <f2v.8,+P0>       chokoishe chor cheol chol dolody<$>
-<f3r>      <! $Q=A $P=E $F=c $B=3 $I=H $L=A $H=1 $C=1>
 <f3r.1,@P0>       <%>tsheos qopal chol cthol daimg
 <f3r.2,+P0>       ycheor chor dam qotcham cham
 <f3r.3,+P0>       ochor qocheor chol daiin cthy
@@ -82,7 +77,6 @@
 <f3r.18,+P0>      <%>pcheoldom shodaiin qopchor qopol opcholqoty <->otolom
 <f3r.19,+P0>      otchor olcheor qoeor dair qoteol qosaiin <->chor cthy
 <f3r.20,+P0>      ycheor chol odaiin chol s aiin okolor am<$>
-<f3v>      <! $Q=A $P=F $F=c $B=3 $I=H $L=A $H=1 $C=1>
 <f3v.1,@P0>       <%>koaiin cphor qotoy sha ckhol ykoaiin s oly
 <f3v.2,+P0>       daiidy qoteeol okeeor okor olytol doldar
 <f3v.3,+P0>       okom chol shol seees chom cheeykam okai
@@ -97,7 +91,6 @@
 <f3v.12,+P0>      osh chodair ytchy tchor kcham s
 <f3v.13,+P0>      shar shkaiin qokchy yty cthal chky
 <f3v.14,+P0>      dain sheam ykeam<$>
-<f4r>      <! $Q=A $P=G $F=d $B=4 $I=H $L=A $H=1 $C=1 $X=C>
 <f4r.1,@P0>       <%>kodalchy chpady sheol olsheey qotey <->doiin chor ytoy
 <f4r.2,+P0>       dchor shol shol cthol shtchy chaiin ws <->choraiin chom
 <f4r.3,+P0>       otchol chol chy chaiin qotaiin <->daiin shain
@@ -111,7 +104,6 @@
 <f4r.11,+P0>      qotchoiin sheor qoty
 <f4r.12,+P0>      soiin chaiin chaiin
 <f4r.13,+P0>      daiin cthey<$>
-<f4v>      <! $Q=A $P=H $F=d $B=4 $I=H $L=A $H=1 $C=1>
 <f4v.1,@P0>       <%>pchooiin ksheo kchoy chopchy dolds <->dlod
 <f4v.2,+P0>       ol chey chy cthy shkchor sheo cheory <->choldy
 <f4v.3,+P0>       sho sho chaiin shaiin daiin qodaiin <->oaram
@@ -126,7 +118,6 @@
 <f4v.12,+P0>      qokey sho okeol skeey sharcharody
 <f4v.13,+P0>      shody s cheor chokody shodaiin qoty
 <f4v.14,+P0>      ochody chykey chtody<$>
-<f5r>      <! $Q=A $P=I $F=w $B=4 $I=H $L=A $H=1 $C=1>
 <f5r.1,@P0>       <%>kchody fchoy chkoy oaiin oarolsy chody dkshydy
 <f5r.2,+P0>       ochey okey qokaiin sho ckhoy cthey chey okawos otol
 <f5r.3,+P0>       qoaiin otanchy daiin oteeeb chocthy otchy qotchody
@@ -134,14 +125,12 @@
 <f5r.5,+P0>       <%>tchy shody qoaiin cholols sho qotcheo daiin shodaiin
 <f5r.6,+P0>       sho cheorchey qoeeey qoykeeey qoeor cthy shotshy dy
 <f5r.7,+P0>       qotoeey keey cheokchy shody<$>
-<f5v>      <! $Q=A $P=J $F=w $B=4 $I=H $L=A $H=1 $C=1>
 <f5v.1,@P0>       <%>kocheor chor ytchey pshod chols chodaiin ytoiiin daiin
 <f5v.2,+P0>       dchol cy chol otaiin dain cthor chots ychopordg
 <f5v.3,+P0>       qotcho ytor daiin daiin otchor daiin qo darchor do
 <f5v.4,+P0>       qotor shees otol ykoiin sholdaiin cthor okchytaiin
 <f5v.5,+P0>       shokeeol chor cheotol otchol daiin dal cholchotaiin
 <f5v.6,+P0>       otol chol dairodg<$>
-<f6r>      <! $Q=A $P=K $F=x $B=3 $I=H $L=A $H=1 $C=1>
 <f6r.1,@P0>       <%>foar y shol cholor cphol chor chck <->chopchol otcham
 <f6r.2,+P0>       daiin chckhy chor chor kar cthy <->cthor chotols
 <f6r.3,+P0>       foeear kshor choky os cheoeees <->ykeor ytaiin dam
@@ -156,7 +145,6 @@
 <f6r.12,+P0>      or shol cthom chor cthy
 <f6r.13,+P0>      qocthol yodaiin cthy
 <f6r.14,+P0>      ysho taiin ykaiim<$>
-<f6v>      <! $Q=A $P=L $F=x $B=3 $I=H $L=A $H=1 $C=1>
 <f6v.1,@P0>       <%>koarysar cheekar qoor shor chapchy s chear char otchy
 <f6v.2,+P0>       oees chor chckhy qoekchar cheas odaiiin kchey chorchaiin
 <f6v.3,+P0>       qoair ckhy chol oechockhy chekchoy ckhy okol <->rychos
@@ -178,7 +166,6 @@
 <f6v.19,+P0>      ocholy kchos chy dor
 <f6v.20,+P0>      dchor choldar okol daiin
 <f6v.21,+P0>      ycheor chor octham<$>
-<f7r>      <! $Q=A $P=M $F=y $B=2 $I=H $L=A $H=1 $C=1>
 <f7r.1,@P0>       <%>fchodaiin shopchey qko <->shey qoos sheey charochy
 <f7r.2,+P0>       dcheey keo r shor dold <->dchey kchey otchy cheody
 <f7r.3,+P0>       oeeees cheodaiin sheey <->ytcheey qotchy chald
@@ -189,7 +176,6 @@
 <f7r.8,+P0>       okchey deeeese choty qokchy <->shol keey choty dain
 <f7r.9,+P0>       qokechy olchoiin chol cphey <->shckhy chochy kchod
 <f7r.10,+P0>      schain chor daiin chckhy<$>
-<f7v>      <! $Q=A $P=N $F=y $B=2 $I=H $L=A $H=1 $C=1>
 <f7v.1,@P0>       <%>polyshy shey tchody qopchy otshol dy daiin tshodody
 <f7v.2,+P0>       chochy cthy daiin qoky chcphhy daiin cthol cthy cthd
 <f7v.3,+P0>       qokchy dykchy chkeey kshy ky ty dor cheey olcheoldy
@@ -199,7 +185,6 @@
 <f7v.7,+P0>       okshodeeeb chorcheorodaiin shotcho <->dol dol dor aiin
 <f7v.8,+P0>       qoteeeo r chocheeody qotchey tey <->okchor daiin
 <f7v.9,+P0>       sho keeo daiir chokchy dor deol dy <->doldaiin<$>
-<f8r>      <! $Q=A $P=O $F=z $B=1 $I=H $L=A $H=1 $C=1>
 <f8r.1,@P0>       <%>pshol chor otshal chopy <->cphol chody shy cfhodar shor
 <f8r.2,+P0>       tchty shkcheals sho <->okche do dchy dain al
 <f8r.3,+P0>       chodar shy sy <->chodaiin shokchy chor dy
@@ -221,7 +206,6 @@
 <f8r.19,+P0>      sair cheain cphol dar <->shol kaiin shol kaiin daikam
 <f8r.20,+P0>      or chokesey shey o kal <->chal
 <f8r.21,=Pt>      schol saim<$>
-<f8v>      <! $Q=A $P=P $F=z $B=1 $I=H $L=A $H=1 $C=1>
 <f8v.1,@P0>       <%>cwhod soocwh <->sol shol otol chol opcheaiin opydaiin saiin
 <f8v.2,+P0>       shcthal sar <->chor sheaiin shor chykchy otaiin cty
 <f8v.3,+P0>       qody cheal sy <->chory <->chear shol chaiin shaiin dolas
@@ -239,7 +223,6 @@
 <f8v.15,+P0>      or chol chan chcky <->chor cheain char cheeky chor ry
 <f8v.16,+P0>      chor cheor chear <->oteey dchor chodey cho raiin
 <f8v.17,+P0>      dain chear daiin<$>
-<f9r>      <! $Q=B $P=A $F=a $B=1 $I=H $L=A $H=1 $C=1>
 <f9r.1,@P0>       <%>tydlo choly cthor orchey s shy odaiin sary <->shor cthy
 <f9r.2,+P0>       oykeey cholytaiin okchody toeoky okoiin dy <->or chaiin
 <f9r.3,+P0>       toiin cphy qotod otaiin cthy okor chey <->cthod ram
@@ -250,7 +233,6 @@
 <f9r.8,+P0>       qotcho qokchy cthey koraiin okain d <->dal <->s olshocthy
 <f9r.9,+P0>       ochocthy choctoy chodykchy saiindchy <->daiin
 <f9r.10,+Pc>      ytchas oraiin chkor<$>
-<f9v>      <! $Q=B $P=B $F=a $B=1 $I=H $L=A $H=1 $C=1 $X=C>
 <f9v.1,@P0>       <%>fochor oporody opy shor daiin qopchypcho qofol shol cfhol daiin
 <f9v.2,+P0>       dchor qoaiin chkaiin cthor chol chor cphol dy <->oty qokaiin dy
 <f9v.3,+P0>       ykey chor ykaiin daiin cthy otaiin oky <->oeees daiin
@@ -263,7 +245,6 @@
 <f9v.10,+P0>      oty kchol chol chy kyty
 <f9v.11,+P0>      ychor chshoty okykaiin
 <f9v.12,+P0>      chkaiin ckhy chor<$>
-<f10r>     <! $Q=B $P=C $F=b $B=2 $I=H $L=A $H=1 $C=1>
 <f10r.1,@P0>      <%>pchocthy shor octhody chorchy pchodol chopchal ypchkom
 <f10r.2,+P0>      dchey cthoor char chty oschair otytchol oky daiin etyd
 <f10r.3,+P0>      qotor otchy daiin chocthy qotchy chol or yty dy dy
@@ -276,7 +257,6 @@
 <f10r.10,+P0>     oqotor otor cfhy cthor osain <->ytoiin
 <f10r.11,+P0>     wotchoshor qoty qotor cthyd <->otar
 <f10r.12,+P0>     wodaiin daiin qotchy qotor<$>
-<f10v>     <! $Q=B $P=D $F=b $B=2 $I=H $L=A $H=1 $C=1>
 <f10v.1,@P0>      <%>paiindaiin sheo pcheey qoty daiin cthor otydy sain
 <f10v.2,+P0>      dain daiin ckhy chcthor choiin qot chodaiin cthy daiin
 <f10v.3,+P0>      dsho ytey kchol olty chol dy<$>
@@ -284,7 +264,6 @@
 <f10v.5,+P0>      shoykeey daiin qotchy qotor chol daiin qokchyky
 <f10v.6,+P0>      shoiin chor shcthy qoty qotoiin qokol choraiin
 <f10v.7,+P0>      qokol chyky cholcheky daiin dain chckhan<$>
-<f11r>     <! $Q=B $P=E $F=c $B=3 $I=H $L=A $H=1 $C=1>
 <f11r.1,@P0>      <%>tshol schoal cfhy shfydaiin cphy shey tchody shoyty
 <f11r.2,+P0>      socthody qodory kshy daiin ytchy ytchoky kchol daiin
 <f11r.3,+P0>      qoty chol cthy dor ykychy choty dain chaiin daiin dod
@@ -292,14 +271,12 @@
 <f11r.5,+P0>      <%>tchol shor shor dky chwhy daiin cthy dychodldaiin
 <f11r.6,+P0>      odl dsy otol chaiin ykchor dair chody cthy s daiin
 <f11r.7,+P0>      qotchy okchol cthy dy<$>
-<f11v>     <! $Q=B $P=F $F=c $B=3 $I=H $L=A $H=1 $C=1>
 <f11v.1,@P0>      <%>poldchody shcphy shordy qoty <->shol cphar dany
 <f11v.2,+P0>      shol dy chckhy shcthy daiin dam <->ykchy dain dchy
 <f11v.3,+P0>      otchor dy kchy tchy war qokchd <->oky choldydy
 <f11v.4,+P0>      qokchor chololcr chyky dchy qoky <->ctho tchey tu
 <f11v.6,=P0>      soydy qoteey qot chor dy ddy <->cthor shyarg
 <f11v.7,+P0>      ycheor ksho dor cthey schold<$>
-<f13r>     <! $Q=B $P=I $F=w $B=4 $I=H $L=A $H=1 $C=1>
 <f13r.1,@P0>      <%>torshor opchy shol dy qopchy shol opchor dypchy dchg
 <f13r.2,+P0>      dchol chol dol shkchy ydal shy ykchy qot?y daiin s y
 <f13r.3,+P0>      sy dchor shaiin oeees ykor chor ytshy ykchy kchy dar
@@ -310,7 +287,6 @@
 <f13r.8,+P0>      shochy qokchy torchy kchky <->s okchey daiin
 <f13r.9,+P0>      oldy shey chol doiin ykoly <->okchal daldy
 <f13r.10,+P0>     sotchy kchy okorory<$>
-<f13v>     <! $Q=B $P=J $F=w $B=4 $I=H $L=A $H=1 $C=1>
 <f13v.1,@P0>      <%>koair chtoiin otchy kchod otol otchy octhos
 <f13v.2,+P0>      oko qokol chodal otchol cphol choty
 <f13v.3,+P0>      qokchy qokod chy otchy cthody
@@ -321,7 +297,6 @@
 <f13v.8,+P0>      otchy daiin ydain ykol <->okchy okald <->dytaiin
 <f13v.9,+P0>      tchtod otal cthor ytal <->y chotal <->sho qocthy
 <f13v.10,+P0>     yol chy kchey kchor dal<$>
-<f14r>     <! $Q=B $P=K $F=x $B=3 $I=H $L=A $H=1 $C=1>
 <f14r.1,@P0>      <%>pchodaiin chopol shoiin daiin dain
 <f14r.2,+P0>      oykeey soiiin chok qokchy da okol
 <f14r.3,+P0>      ydaiin olchy kchor daiin olol
@@ -335,7 +310,6 @@
 <f14r.11,+P0>     dchokchy schol dy shey dar qoty <->ykeeyky
 <f14r.12,+P0>     oeeeb chey keor chey tchyky <->chodalg
 <f14r.13,+P0>     sodaiin chy kchy kchy ykeody<$>
-<f14v>     <! $Q=B $P=L $F=x $B=3 $I=H $L=A $H=1 $C=1>
 <f14v.1,@P0>      <%>pdychoiin yfodain otyshy dy ypchor daiin kol ydain
 <f14v.2,+P0>      okchor dchytshy oty chy cthy otchyty choldaiin
 <f14v.3,+P0>      ychydy daiin chcthy ykykaiin dytchy ykhhy kydy
@@ -345,7 +319,6 @@
 <f14v.7,+P0>      oykshy choty dydyodyd otchy o kchy dshy dardy
 <f14v.8,+P0>      chokshor daiin <->okshody daiin <->dol dair dam
 <f14v.9,+P0>      dykchy ctholdg <->dchckhy<$>
-<f15r>     <! $Q=B $P=M $F=y $B=2 $I=H $L=A $H=1 $C=1>
 <f15r.1,@P0>      <%>tshor shey tchaly <->shy chtols shey daiin
 <f15r.2,+P0>      otchor qokchor oly <->okor shy koly
 <f15r.3,+P0>      qokaiin qotchytydy <->daiin chol cthy
@@ -361,7 +334,6 @@
 <f15r.13,+P0>     ykshol dor sheey cthy dain <->sky <->shorshoty
 <f15r.14,+P0>     otcho kchy chol daiin ithar <->ytol dor dom
 <f15r.15,+P0>     qotchor chaiin chykol daky<$>
-<f15v>     <! $Q=B $P=N $F=y $B=2 $I=H $L=A $H=1 $C=1>
 <f15v.1,@P0>      <%>poror orshy choiin dtchan opchordy
 <f15v.2,+P0>      wchor or oro raiin cthy ?aindar
 <f15v.3,+P0>      cthor daiin qokor okeor okaiin
@@ -374,7 +346,6 @@
 <f15v.10,+P0>     sor chor cthoiin cthy qokaiin
 <f15v.11,+P0>     soloiin cheor chol daiin cthy
 <f15v.12,+P0>     daiin cthor chol chor<$>
-<f16r>     <! $Q=B $P=O $F=z $B=1 $I=H $L=A $H=1 $C=1>
 <f16r.1,@P0>      <%>pocheody qopchey sykaiin opchydor ychy <->daiin dy <->chor orom
 <f16r.2,+P0>      ychykchy otey kol shor ody otody qoy <->oeesordy
 <f16r.3,+P0>      ydor sheal okchy qoykoiin choky ykair
@@ -388,7 +359,6 @@
 <f16r.11,+P0>     sokchy qokol choty okchy cthy chykchy
 <f16r.12,+P0>     dychokchy shcthy shtshy sho tchokyd
 <f16r.13,+P0>     qokohor dl dy shey<$>
-<f16v>     <! $Q=B $P=P $F=z $B=1 $I=H $L=A $H=1 $C=1>
 <f16v.1,@P0>      <%>pchroiin otchor chpchol chpchey spchocty
 <f16v.2,+P0>      ytchor y kychokchy qokchocthor shory
 <f16v.3,+P0>      ykchy dy choy qoty chykchy koshet
@@ -402,7 +372,6 @@
 <f16v.11,+P0>     okytaiin chkchy saiin
 <f16v.12,+P0>     daiin yky otor chody
 <f16v.13,+P0>     sokar oaorar<$>
-<f17r>     <! $Q=C $P=A $F=a $B=1 $I=H $L=A $H=1 $C=1 $X=O>
 <f17r.1,@P0>      <%>fshody daram ydarchog opydy ypod chop otchy dody oldckhy
 <f17r.2,+P0>      ydair choky okshy qodar ckhody dor otchol qodcthy ods
 <f17r.3,+P0>      chol or chy qodam okor chor okchom<$>
@@ -415,7 +384,6 @@
 <f17r.10,+P0>     dar chear dcheor sain y mol
 <f17r.11,+P0>     otchol cthar okaiin chol daiiin
 <f17r.12,+P0>     ychody chotom<$>
-<f17v>     <! $Q=C $P=B $F=a $B=1 $I=H $L=A $H=1 $C=1>
 <f17v.1,@P0>      <%>pchodol chor pchy opydaiin odaldy
 <f17v.2,+P0>      ycheey keeor cthodal okol odaiin okal
 <f17v.3,+P0>      oldaig odaiin okal oldaiin chockhol olol
@@ -439,7 +407,6 @@
 <f17v.21,+P0>     oal sheor sholor or shecthy cpheor daiin
 <f17v.22,+P0>     qokeee dar chey keeor cheeol ctheey cthy
 <f17v.23,+P0>     chkeey okeor shar okeom<$>
-<f18r>     <! $Q=C $P=C $F=b $B=2 $I=H $L=A $H=1 $C=1>
 <f18r.1,@P0>      <%>pdrairdy darodcf yoar ykchol dar om chckhy <->octhor dal
 <f18r.2,+P0>      otshol qokchol chykchy okchal daiin dy <->chol dain
 <f18r.3,+P0>      qokchor chor cwhwkey orchey qokchol dy <->ytcharg
@@ -454,7 +421,6 @@
 <f18r.12,+P0>     ychair cthol daiin qokchy cthy
 <f18r.13,+P0>     or shaiin cthar cthal okal dar
 <f18r.14,+Pc>     ychekchy kchaiin<$>
-<f18v>     <! $Q=C $P=D $F=b $B=2 $I=H $L=A $H=1 $C=1>
 <f18v.1,@P0>      <%>told shor ytshy otchdal dchal dchy ytdg
 <f18v.2,+P0>      qoeees or oaiin shyw okshy qokchy qokchy s g
 <f18v.3,+P0>      orshy qoky qoky chkchy qokshy qokam
@@ -465,7 +431,6 @@
 <f18v.8,+P0>      tolol sh cphoy daror ddy ytor ykam
 <f18v.9,+P0>      okchor qotchy qokchy ytol doky dy
 <f18v.10,+P0>     yko dshy dair ykol dom<$>
-<f19r>     <! $Q=C $P=E $F=c $B=3 $I=H $L=A $H=1 $C=1>
 <f19r.1,@P0>      <%>pchor qodchy qotshy dy tchy qotchy qoky daiin dchydy
 <f19r.2,+P0>      dshy chor y tchy chol dytchy chordy daiin dyty w chow
 <f19r.3,+P0>      oscheor shy tdaiin chol dor yky
@@ -479,7 +444,6 @@
 <f19r.11,+P0>     qotchy qolody choldy cthyd
 <f19r.12,+P0>     ykchor chor daiin daiinol
 <f19r.13,+P0>     osocthor ytchor<$>
-<f19v>     <! $Q=C $P=F $F=c $B=3 $I=H $L=A $H=1 $C=1>
 <f19v.1,@P0>      <%>pochaiin cthor chpcheos opchey pykchy
 <f19v.2,+P0>      qokchy kchol sor qokchos ykchy darom
 <f19v.3,+P0>      otchy choldaiin qotol ytol daiiin
@@ -494,7 +458,6 @@
 <f19v.12,+P0>     otch okchodshy daiin or otaiin dais
 <f19v.13,+P0>     yees ykchol oty ytor ytar ytchor ytaiin
 <f19v.14,+Pr>     otcholcheaiin cthol<$>
-<f20r>     <! $Q=C $P=G $F=d $B=4 $I=H $L=A $H=1 $C=1 $X=C>
 <f20r.1,@P0>      <%>kdchody chopy cheey qotchol qotoeey dchor chaiin
 <f20r.2,+P0>      chodey cthey chotol odaiir qotchy cthody chodchy
 <f20r.3,+P0>      qoteey chochodaiin sho qochy chey tcheodal daral
@@ -508,7 +471,6 @@
 <f20r.11,+P0>     dchod qoteeody ytchy qotshey dchaiin cholody
 <f20r.12,+P0>     shoiin cheody otchey otchy tchy qoteey daiin dar
 <f20r.13,+P0>     ochaiin chor chorcheey tchey<$>
-<f20v>     <! $Q=C $P=H $F=d $B=4 $I=H $L=A $H=1 $C=1>
 <f20v.1,@P0>      <%>faiisar okoy shypofochey opchy qopy choldy opydy cphy
 <f20v.2,+P0>      sos ykoiin cheol chol choiin checthy otol chol chodaiin oty
 <f20v.3,+P0>      okchy shokchol shol chcthy qoty chy tolshy qotchy
@@ -520,7 +482,6 @@
 <f20v.9,+P0>      ykchy keody cho cthy chol shd qoty dw
 <f20v.10,+P0>     shokaiin chocthy chol daiin chy chor ety
 <f20v.11,+P0>     okoiin chey wphol chory<$>
-<f21r>     <! $Q=C $P=I $F=w $B=4 $I=H $L=A $H=1 $C=1>
 <f21r.1,@P0>      <%>pchor oeeockhy o fychey ypchey qopcheody otaiin chan
 <f21r.2,+P0>      saiin chcphy okysheaiin qotchol oteos sheey cthy daiin
 <f21r.3,+P0>      qotolshy o l cheor chy qokchey chey keey dy<$>
@@ -533,7 +494,6 @@
 <f21r.10,+P0>     totchy keor chyky qotaiin qotchol ty ctheey otaiin
 <f21r.11,+P0>     shol chol shol tchol chcthy otyky shey yteol shody
 <f21r.12,+P0>     ykeey chor sheey ysheol chor chol daiin chkaiin<$>
-<f21v>     <! $Q=C $P=J $F=w $B=4 $I=H $L=A $H=1 $C=1>
 <f21v.1,@P0>      <%>toldshy chofchy qofshey shckhol odaiin shey ckholy
 <f21v.2,+P0>      oeeesoy qokchy chody qotchy qokchy choty tchol daiin
 <f21v.3,+P0>      qotol keeees chotchy tcho choty chor qotol daiin dal
@@ -542,7 +502,6 @@
 <f21v.6,+P0>      sho tsho chotshol chol todaiin daiin
 <f21v.7,+P0>      ykcho lchol cholchaiin otchy s sheaiin
 <f21v.8,+P0>      cho l kchochaiin<$>
-<f22r>     <! $Q=C $P=K $F=x $B=3 $I=H $L=A $H=1 $C=1>
 <f22r.1,@P0>      <%>pol olshy fcholy shol dpchy oty okoly daiin opchys ocphy
 <f22r.2,+P0>      ol oiin shol o kor qokchol daiin okaiin cthor dain ckhy dom
 <f22r.3,+P0>      qokol dykaiin okchy daiin cthol ctholo dar shain<$>
@@ -556,7 +515,6 @@
 <f22r.11,+P0>     doiin yckhody qokchy oky otoldy yty dol or <->dchchy daiin
 <f22r.12,+P0>     odchaiin cthy okchy kchy dchol daiin <->ydaiin
 <f22r.13,+P0>     dchor dydain qockhy ykolokain<$>
-<f22v>     <! $Q=C $P=L $F=x $B=3 $I=H $L=A $H=1 $C=1>
 <f22v.1,@P0>      <%>pysaiinor ofchar oky tchy otdy <->sor shy qod
 <f22v.2,+P0>      daiin ykaiin qotchy kchy otchyd <->dshor ychy
 <f22v.3,+P0>      qoky kchorl otchy cthy otchyky <->ytchol otam
@@ -573,7 +531,6 @@
 <f22v.14,+P0>     qotchy olshly shol daiin
 <f22v.15,+P0>     sho cthy chocthy qokchy dory
 <f22v.16,+Pc>     saiinchy daldalol<$>
-<f23r>     <! $Q=C $P=M $F=y $B=2 $I=H $L=A $H=1 $C=1>
 <f23r.1,@P0>      <%>pydchdom chy fcholdy oty otcholshy opyaiin yyfchy daiin ololdy dal
 <f23r.2,+P0>      to ar chor daiin chkdain otchy lolchor daiin dam okchol daing
 <f23r.3,+P0>      dchar ykor ykaiin daiin cth? g<$>
@@ -585,7 +542,6 @@
 <f23r.9,+P0>      okolokshy qokoldy <->dal dshe qokeees y oly <->daiin dal
 <f23r.10,+P0>     qok okaiin chkchys <->yteain odal chaldy <->dar ykain
 <f23r.11,+P0>     ykyka dalory<$>
-<f23v>     <! $Q=C $P=N $F=y $B=2 $I=H $L=A $H=1 $C=1>
 <f23v.1,@P0>      <%>podairol odaiiily shoaldy opchol otol ol chcphy qotchar s
 <f23v.2,+P0>      qotcotor chy okchaldy qokchey dol <->otchol chal otchg
 <f23v.3,+P0>      ycho okaiin okeol eees ol daiin okeeor <->daiin qotcholg
@@ -598,7 +554,6 @@
 <f23v.10,+P0>     dor chy kshol chol ctho? <->otol oloiir
 <f23v.11,+P0>     yokaiin doroiin olols oiin <->ol cheeb ols
 <f23v.12,+P0>     olaiios oloro eeeoly<$>
-<f24r>     <! $Q=C $P=O $F=z $B=1 $I=H $L=A $H=1 $C=1>
 <f24r.1,@P0>      <%>porory chor opchar she cheol daiin or
 <f24r.2,+P0>      qotaiin char odaiin okaiikhal oky
 <f24r.3,+P0>      ycthar cthal okol qotar ckhy
@@ -619,7 +574,6 @@
 <f24r.18,+P0>     ycheol chol daiin chol s
 <f24r.19,+P0>     yol kol chol shom otacphy
 <f24r.20,+Pc>     sam chorly<$>
-<f24v>     <! $Q=C $P=P $F=z $B=1 $I=H $L=A $H=1 $C=1>
 <f24v.1,@P0>      <%>tchodar chocfhey opom shod chcphy opshody ocphoraiin okowam
 <f24v.2,+P0>      ydals ckhor shy cho dchor otol otaiir <->otchos okchom okcho
 <f24v.3,+P0>      octhyl odchees oesearies okam chcth
@@ -636,7 +590,6 @@
 <f24v.14,+P0>     doiir cheeodam sho sho dy
 <f24v.15,+P0>     dchey kchod dchal ochdy
 <f24v.16,+P0>     otchol odaiim<$>
-<f25r>     <! $Q=D $P=A $F=a $B=1 $I=H $L=A $H=1 $C=1>
 <f25r.1,@P0>      <%>fcholdy soshy daiin cky shody daiinocholdy cpholdy sy
 <f25r.2,+P0>      otor chor chsky chotchy shair qod shachy kchy chkain
 <f25r.3,+P0>      qotchy qotshy cheesees sheear s chain daiin chain dan
@@ -644,7 +597,6 @@
 <f25r.5,+P0>      qotcheaiin dchain cthain daiin daiin cthain qotaiin
 <f25r.6,+P0>      okal chotaiin
 <f25r.7,=Pt>      dair otaiir otosy<$>
-<f25v>     <! $Q=D $P=B $F=a $B=1 $I=H $L=A $H=1 $C=1>
 <f25v.1,@P0>      <%>poeeaiin qoky shy daiin qopchey otchey qofchorsos
 <f25v.2,+P0>      dchor cthor chor daiin s okeeaiin daiin ckhey daiin
 <f25v.3,+P0>      orcho kchor chol daiin shcfhordaiin dshey daiity
@@ -652,7 +604,6 @@
 <f25v.5,+P0>      dar chokeey dshor dshey qochol dol cho daiin daiin
 <f25v.6,+P0>      qokchorochy qotchy qotoral <->cho w chain deeaiir s
 <f25v.7,+P0>      oco chkey daiiol daiin shckh <->orchaiin<$>
-<f27r>     <! $Q=D $P=E $F=c $B=3 $I=H $L=A $H=1 $C=1>
 <f27r.1,@P0>      <%>ksor shey shoteo chforaiin shy <->shod chary
 <f27r.2,+P0>      dy coain shol dain dar shokyd <->dchol ctheyds
 <f27r.3,+P0>      chol shy keol chol chy shol chy <->daiin chey dam
@@ -666,7 +617,6 @@
 <f27r.11,+P0>     chol daiiin chees chos ctey dan
 <f27r.12,+P0>     dain cheokeey chey cthey otal
 <f27r.13,+Pc>     otchodeey<$>
-<f27v>     <! $Q=D $P=F $F=c $B=3 $I=H $L=A $H=1 $C=1>
 <f27v.1,@P0>      <%>pochof chof cho sho soly shol ytchar opchory kchorchor
 <f27v.2,+P0>      dchy chkar otchy shy shy dchy dshy kchy cheo daidy dchy
 <f27v.3,+P0>      kchey kchy dchokchy dsho dcar chodchy etcheody shld
@@ -675,7 +625,6 @@
 <f27v.6,+P0>      dsho kchrrr okeedy <->dchschy <->sotchdy
 <f27v.7,+P0>      sho shoykcho shdy <->dchd <->chschsy <->otchdy
 <f27v.8,+P0>      okshes okchokshy<$>
-<f28r>     <! $Q=D $P=G $F=d $B=4 $I=H $L=A $H=1 $C=1>
 <f28r.1,@P0>      <%>pchodar shod chocphy opchol daiin <->otchol chy qoldy
 <f28r.2,+P0>      otchor otchor cthol cty ctheol dy <->dchar chakod dly
 <f28r.3,+P0>      qotchaiin shor cthol cthol shor <->chotchy tchodar
@@ -685,7 +634,6 @@
 <f28r.7,+P0>      sho otor shockhy shocthy otoldy <->dshor dol dar
 <f28r.8,+P0>      oschotshl daiin okchey kol daiin <->shol dsho otaiin
 <f28r.9,+P0>      ytchol deey yteol deaiin<$>
-<f28v>     <! $Q=D $P=H $F=d $B=4 $I=H $L=A $H=1 $C=1>
 <f28v.1,@P0>      <%>kshol qooiiin shor pshoiiin shepchy qoty dy shory
 <f28v.2,+P0>      ykcholy qoty chydy qokchol chor tchy qokchody cheor o
 <f28v.3,+P0>      chor chol chy choiin<$>
@@ -695,7 +643,6 @@
 <f28v.7,*P0>      <%>pchol oiir chol tsho daiin sho <->tco <->chy chtshy dairam
 <f28v.8,+P0>      okain chan chain cthor dain <->yk <->chy <->daiin cthol
 <f28v.9,+P0>      sor chear chl c choly dar<$>
-<f29r>     <! $Q=D $P=I $F=w $B=4 $I=H $L=A $H=1 $C=1>
 <f29r.1,@P0>      <%>posaiin she aiin chepoty chy qotchy qoty cheecthy
 <f29r.2,+P0>      dshe ykchy choty oky chol chchoty choky chytydy
 <f29r.3,+P0>      qokchy qoty kchaiin shear cthor <->dchor choly
@@ -705,7 +652,6 @@
 <f29r.7,+P0>      qokchy chol shokchy qokaiin choety <->choty kaiin
 <f29r.8,+P0>      shor chor shosheky shy qotykody <->daiin cthy
 <f29r.9,+P0>      qokshe qor chey kor cheod ychom<$>
-<f29v>     <! $Q=D $P=J $F=w $B=4 $I=H $L=A $H=1 $C=1>
 <f29v.1,@P0>      <%>kooiin shor chetchy olls shytchy cthyshy <->cho shy daiin
 <f29v.2,+P0>      qotcheaiin s chol chol cthy chey cthold <->ytchor dary
 <f29v.3,+P0>      chol chol kor shey odaiin qotchy taiin <->s she otey sy
@@ -718,7 +664,6 @@
 <f29v.10,+P0>     <%>qokoiin okaiin cho <->cti <->chyd <->chykar
 <f29v.11,+P0>     daiin chteor octhy <->dar <->chyt <->otody
 <f29v.12,+P0>     qekeochor otchey sy<$>
-<f30r>     <! $Q=D $P=K $F=x $B=3 $I=H $L=A $H=1 $C=1>
 <f30r.1,@P0>      <%>okeeesy chey shorchey fcheody shey tchy ches d o shey
 <f30r.2,+P0>      ychody chey chkeey ksho keeor cheor shey she keeodol sy
 <f30r.3,+P0>      chodaiin chory chey doiin sain chorain cheeykeem
@@ -732,7 +677,6 @@
 <f30r.11,+P0>     qotchor cheor chey cheor chey soeeb <->ydey <->sor daiin
 <f30r.12,+P0>     dcheey ckhey ckhey daiin chkeaiin dar <->chor <->ychdain
 <f30r.13,+P0>     chodaiin chtchey chear shykeey<$>
-<f30v>     <! $Q=D $P=L $F=x $B=3 $I=H $L=A $H=1 $C=1>
 <f30v.1,@P0>      <%>cwhscwhain shosaiin chocthey sho chepchy shor sheaiin
 <f30v.2,+P0>      qotchor chy she kchor chory keorol chy daiin ctholdy
 <f30v.3,+P0>      chotchol daiin cthol doiin daiin chokeor dal chtoithy
@@ -744,7 +688,6 @@
 <f30v.9,+P0>      qotchor chor sheey cheolsos
 <f30v.10,+P0>     sho sheoldy otcheor daiin
 <f30v.11,+P0>     sol chokcheey daiin kchydy<$>
-<f32r>     <! $Q=D $P=O $F=z $B=1 $I=H $L=A $H=1 $C=1 $X=C>
 <f32r.1,@P0>      <%>fchaiin shykeody daiiody dain <->sho tchy oty qopy
 <f32r.2,+P0>      okor okchor sheor ckhy dal <->dshodar qotchol
 <f32r.3,+P0>      qokchor chor cthol chol dol <->dcheodain daiin
@@ -764,7 +707,6 @@
 <f32r.17,+P0>     chokeol dchoty
 <f32r.18,+P0>     doiin shoshy
 <f32r.19,+P0>     dol dchol dan<$>
-<f32v>     <! $Q=D $P=P $F=z $B=1 $I=H $L=A $H=1 $C=1>
 <f32v.1,@P0>      <%>kcheodaiin cholkechy qotaiin daiioam <->ochofchody
 <f32v.2,+P0>      daiin odar chy daiin chey tchy ldy <->dain teor
 <f32v.3,+P0>      shor daiin chckhy dsho dain daiin s <->shokey ka
@@ -776,7 +718,6 @@
 <f32v.9,+P0>      qotchy cfhy skey chocthy daiin cthaiin <->daiin
 <f32v.10,+P0>     sho keol chor chol daiin cphol cthol da <->ar
 <f32v.11,+P0>     ol sho chy<$>
-<f35r>     <! $Q=E $P=E $F=c $B=3 $I=H $L=A $H=1 $C=1>
 <f35r.1,@P0>      <%>cwhoo rcholycwhy choty char dy
 <f35r.2,+P0>      qokeeaiin chokaiin qotchy daiin
 <f35r.3,+P0>      dchaiin cthey qotchey taiin cthory
@@ -792,7 +733,6 @@
 <f35r.13,+P0>     qokoiin chaiin qokchaiin lshy lodaly <->oteey taiin
 <f35r.14,+P0>     cthol chol aiin qotchy otchor daiin <->shol qotaiin
 <f35r.15,+P0>     ochor s chiin daiin ytain<$>
-<f35v>     <! $Q=E $P=F $F=c $B=3 $I=H $L=A $H=1 $C=1>
 <f35v.1,@P0>      <%>parchor chocthy roaiin ar
 <f35v.2,+P0>      qotchy otchey kchor yty
 <f35v.3,+P0>      dchor choty chyty daiin
@@ -814,7 +754,6 @@
 <f35v.19,+P0>     schokey ykeol chol daiin
 <f35v.20,+P0>     sodaiin shy dchy ckhy dan
 <f35v.21,+P0>     doiin chor chor<$>
-<f36r>     <! $Q=E $P=G $F=d $B=4 $I=H $L=A $H=1 $C=1>
 <f36r.1,@P0>      <%>pchawdan qorain chcfhal soiin cphor shaiin cthy dair
 <f36r.2,+P0>      oral shor ytaiin qotaiin qooldy chty choldy tor
 <f36r.3,+P0>      qotchy tchy daiin waiin dolsain<$>
@@ -824,7 +763,6 @@
 <f36r.7,+P0>      qotol cthol okoldy okchy <->ytorory <->sold
 <f36r.8,+P0>      ytchor cthol chaiin yd
 <f36r.9,+P0>      ytodaly daiin otaro<$>
-<f36v>     <! $Q=E $P=H $F=d $B=4 $I=H $L=A $H=1 $C=1>
 <f36v.1,@P0>      <%>pcharasy qoforom shoaiin tchey chckohy otaiin cphar daiin
 <f36v.2,+P0>      qotor chol daiin otaiin qotor ytar ochor chety ckhor dom
 <f36v.3,+P0>      dchytchy ytors <->otaiin qopchor otar otchaiin s
@@ -839,7 +777,6 @@
 <f36v.12,+P1>     ytol kchy otychd
 <f36v.13,+P1>     oky she cthol oty
 <f36v.14,+P1>     soiin chtain<$>
-<f37r>     <! $Q=E $P=I $F=w $B=4 $I=H $L=A $H=1 $C=1>
 <f37r.1,@P0>      <%>tocphol shaiin qotor ofchor oty chory daiin otodor
 <f37r.2,+P0>      ykoiin cthor okaiin qotchy ytody qokaiin sho ytaiin
 <f37r.3,+P0>      qoshy qokaiin ctholdy ckhor okydy<$>
@@ -851,7 +788,6 @@
 <f37r.9,+P0>      ykchody qotchy ykaiin chy qotordy <->otcho loldaiin
 <f37r.10,+P0>     qoto okchochor dchor chy shy daiin <->ychey koldaiir
 <f37r.11,+P0>     okchor daiin ckhy dain daiin<$>
-<f37v>     <! $Q=E $P=J $F=w $B=4 $I=H $L=A $H=1 $C=1>
 <f37v.1,@P0>      <%>tshody qocthy qotoldy chopdain sol
 <f37v.2,+P0>      dor chol cthor orchochor daiin
 <f37v.3,+P0>      qokchon shy chon daiin dy
@@ -875,14 +811,12 @@
 <f37v.21,+P0>     oshctho do daiin cthols
 <f37v.22,+P0>     qotol ytoiin chocthhy
 <f37v.23,+P0>     yto chol daiin<$>
-<f38r>     <! $Q=E $P=K $F=x $B=3 $I=H $L=A $H=1 $C=1>
 <f38r.1,@P0>      <%>tolor chockhy <->oky choiin okshol oly oky
 <f38r.2,+P0>      okshey chodys <->ytoiin otaiin otaiin cthar
 <f38r.3,+P0>      qokor okaiin <->otaiin qokchol chokokor
 <f38r.4,+P0>      ychok chey chckh <->chy chko r odaiin daiin sy
 <f38r.5,+P0>      okor chey kain <->chor ctho dain ckholdy
 <f38r.6,+P0>      ysho sho kos <->daiin okoy chochor daiin<$>
-<f38v>     <! $Q=E $P=L $F=x $B=3 $I=H $L=A $H=1 $C=1>
 <f38v.1,@P0>      <%>okchop chol shotol oteol okeea s <->chor d aiind
 <f38v.2,+P0>      choiin shey key sho oiin s cholldy <->okeaiin okom
 <f38v.3,+P0>      qokeey keor daiin okey keey daiin <->dair daiin s
@@ -891,7 +825,6 @@
 <f38v.6,+P0>      sho keeey key tey daiin daiiin <->dain dain
 <f38v.7,+P0>      daiin qol chy dain w or daiin <->dain daldy
 <f38v.8,+P0>      oaiin char chshol chokaiin<$>
-<f42r>     <! $Q=F $P=C $F=b $B=2 $I=H $L=A $H=1 $C=1>
 <f42r.1,@P0>      <%>cwho ofaiin cthaihcwhy otcheey pchear
 <f42r.2,+P0>      solkaiin char cheky otshaiin daiiry
 <f42r.3,+P0>      toshy chtshar chotar chain dal
@@ -915,7 +848,6 @@
 <f42r.21,+P0>     shol chol chol shol ctoiin cos odan
 <f42r.22,+P0>     kchaiin chos ckhaiin choror chaiin
 <f42r.23,+Pr>     okcholshol kolschees<$>
-<f42v>     <! $Q=F $P=D $F=b $B=2 $I=H $L=A $H=1 $C=1>
 <f42v.1,@P0>      <%>wcho cto sheey qocho taiin shols <->chol chor dain
 <f42v.2,+P0>      dshey tchey y kchey chtchy cwhy dan <->dain otol daiin
 <f42v.3,+P0>      sho chotody chotol oky chol chol <->dl chcthy otoy
@@ -932,7 +864,6 @@
 <f42v.14,+P0>     qoteey chy kchy cthy ctsees choly <->sarar aral
 <f42v.15,+P0>     chokey chol okey
 <f42v.16,=Pt>     okor odeey<$>
-<f44r>     <! $Q=F $P=G $F=d $B=4 $I=H $L=A $H=1 $C=1>
 <f44r.1,@P0>      <%>tshodpy oraiphy koees ypsholy shy otoloaiin
 <f44r.2,+P0>      ydsh dyeees yty oky okchey qykchey dchydy
 <f44r.3,+P0>      oair ekokeey kshotol otal daiin ototaykal
@@ -944,7 +875,6 @@
 <f44r.9,+P0>      otchol oldchckhy qoky qotchy qokchy qokyd
 <f44r.10,+P0>     qokchor okchy qoto ykol choky choky choldam
 <f44r.11,+P0>     ytsho qockhy okchody<$>
-<f44v>     <! $Q=F $P=H $F=d $B=4 $I=H $L=A $H=1 $C=1>
 <f44v.1,@P0>      <%>tsho qotshy cthol d chor otol shol tol qotshol otoldy
 <f44v.2,+P0>      yolkol cheol qokchain daly otchol daiin shol qotor ar
 <f44v.3,+P0>      tol okchor shcthy otol daiin cthy cthy<$>
@@ -958,7 +888,6 @@
 <f44v.11,+P0>     okal chol chol choky okaiin cthy otal
 <f44v.12,+P0>     ychey teol chaiin chcthy ctho cthol
 <f44v.13,+P0>     lchor shol dairl<$>
-<f45r>     <! $Q=F $P=I $F=w $B=4 $I=H $L=A $H=1 $C=1>
 <f45r.1,@P0>      <%>pykydal shaikhy oty shey qop char opchal ypchor ofchar
 <f45r.2,+P0>      shor cthy qoky qokol qokaiin chol chol ykaiin dar om
 <f45r.3,+P0>      qo chcthy kchol daiin qoaiin cthy chaiin ykeey cthom
@@ -970,7 +899,6 @@
 <f45r.9,+P0>      wor or chain dain ykolody ytaiin qotchol kol dy
 <f45r.10,+P0>     okaiin shar yky oky kair daldy dalor cheol dal
 <f45r.11,+P0>     l okaiin okcho laldan daldaiin<$>
-<f45v>     <! $Q=F $P=J $F=w $B=4 $I=H $L=A $H=1 $C=1>
 <f45v.1,@P0>      <%>korary chko kolchey fsholom shor ykchy dod opchaiin olald
 <f45v.2,+P0>      okol chor daiin cthy okchol chom okolor dy <->okchol s
 <f45v.3,+P0>      qokchy lor cheol qotol qotolchy ky cthod <->ykaryd
@@ -982,7 +910,6 @@
 <f45v.9,+P0>      ychor cthy chol qokom sy <->saykchom
 <f45v.10,+P0>     dshor otshy oky tsholol <->ytchord
 <f45v.11,+P0>     orchor ytchy doiin dcholdy<$>
-<f47r>     <! $Q=F $P=M $F=y $B=2 $I=H $L=A $H=1 $C=1>
 <f47r.1,@P0>      <%>wchair oly sheaiin shol daiin chdy
 <f47r.2,+P0>      chokchol cholcholdy dair chadaiin
 <f47r.3,+P0>      dor chol chy chaiin ckhey chol dain okaiin
@@ -994,7 +921,6 @@
 <f47r.9,+P0>      qokokor chaiin okal chol daiin okchokchorsy
 <f47r.10,+P0>     shy otcho keey tor chey otchy tchol dain dam
 <f47r.11,+P0>     dsho cphy daiin daiiny<$>
-<f47v>     <! $Q=F $P=N $F=y $B=2 $I=H $L=A $H=1 $C=1>
 <f47v.1,@P0>      <%>psheot cheor cholsho chopchy sal <->sary
 <f47v.2,+P0>      dsheey shy cphy otchey daiidy chory <->daiiy
 <f47v.3,+P0>      shol char oteol dor otchol chkchy <->daiin
@@ -1009,7 +935,6 @@
 <f47v.12,+P0>     chy chokeesy chy chy cheky <->chochy daiin
 <f47v.13,+P0>     dshy daiin chdlety chaiin <->dcheey otald
 <f47v.14,+P0>     chol ctchey<$>
-<f49r>     <! $Q=G $P=A $F=a $B=1 $I=H $L=A $H=1 $C=1>
 <f49r.1,@P0>      <%>pychol dy shor shol shtchy shorpchor opchor shorkchy
 <f49r.2,+P0>      qotor sho chotchy choshy qopchar qo dor daiin
 <f49r.3,+P0>      dsho <->dchor dchor daiin dor cheoraiin<$>
@@ -1031,7 +956,6 @@
 <f49r.19,+P0>     dcheo r cheey keolchey chokchol chokan
 <f49r.20,+P0>     qotcho chods cho chochy chs oriin
 <f49r.21,+P0>     odcho chor ety shol<$>
-<f49v>     <! $Q=G $P=B $F=a $B=1 $I=H $L=A $H=1 $C=1 $X=S>
 <f49v.2,=P0>      <%>kshor shol cphokchol chcfhhy
 <f49v.4,=P0>      qokchy qokchod sho ckhy
 <f49v.6,=P0>      chotchy chcthy cthey koddy
@@ -1058,7 +982,6 @@
 <f49v.48,=P0>     qotcheol chey chor chokaly chordal <->chaiind<->
 <f49v.50,=P0>     chol chor ches chkalchy chokeeoky <->chokoran
 <f49v.52,=P0>     ykchokeo r cheey daiin<$>
-<f51r>     <! $Q=G $P=E $F=c $B=3 $I=H $L=A $H=1 $C=1>
 <f51r.1,@P0>      <%>tsholdchy qotchy opchear ypchedy
 <f51r.2,+P0>      dcheodaiin ckheody ckhody chody
 <f51r.3,+P0>      ydchody ckhey oty ckheodar qoky
@@ -1074,7 +997,6 @@
 <f51r.13,+P0>     oaiin ckhol ykieol otchey cpheodaiin ykeoldy
 <f51r.14,+P0>     daiiithy qodaiin kaiiidal <->cphodal <->s al dam
 <f51r.15,+P0>     qokol cheor ckhal s or aldy <->otal<$>
-<f51v>     <! $Q=G $P=F $F=c $B=3 $I=H $L=A $H=1 $C=1>
 <f51v.1,@P0>      <%>poshody qokodar shodaiin qotal <->dscheey saiindy
 <f51v.2,+P0>      dshody ckhody qokol dykaiin chy <->qokey daiin cthy
 <f51v.3,+P0>      tchody cthy chckhey qod ytchody <->dchol saiin ytam
@@ -1088,7 +1010,6 @@
 <f51v.11,+P0>     ycheoky sheey ykeey chey
 <f51v.12,+P0>     ochockhy daiin chockhey
 <f51v.13,+P0>     daiin cheol cheodain<$>
-<f52r>     <! $Q=G $P=G $F=d $B=4 $I=H $L=A $H=1 $C=1>
 <f52r.1,@P0>      <%>tdokchcfhy ycphko ytair shar qofydaiin ypchy otchol dar yty
 <f52r.2,+P0>      oty shor ykoldy qoky koldal oteees dals <->otardl
 <f52r.3,+P0>      tchotshey qoty okchol tchody qotam oky <->ytoldy
@@ -1097,7 +1018,6 @@
 <f52r.6,+P0>      daiin shedaiin qodal dy chokam otchordy <->okchol do
 <f52r.7,+P0>      qokchy qockhom dals shodaim tcham dody <->ykeey daig am
 <f52r.8,+P0>      orcheey dor shey kom s cheey dchom daiin<$>
-<f52v>     <! $Q=G $P=H $F=d $B=4 $I=H $L=A $H=1 $C=1>
 <f52v.1,@P0>      <%>pchor chcphol cphaiiin otcheor ytorkol chocphar
 <f52v.2,+P0>      ytchey chol cthodaiir shy kor esechor chy dam
 <f52v.3,+P0>      oorchor chochar ls chteeor ytol sheol otam
@@ -1112,7 +1032,6 @@
 <f52v.12,+P0>     qoekar ckhol ykchody ckhy
 <f52v.13,+P0>     ykor okaiiin ckheeey daiig
 <f52v.14,+P0>     odar cheokor ckheey<$>
-<f53r>     <! $Q=G $P=I $F=w $B=4 $I=H $L=A $H=1 $C=1>
 <f53r.1,@P0>      <%>kodamchocthody oty
 <f53r.2,+P0>      dol dain schoshe oty
 <f53r.3,+P0>      shoas chokan ody
@@ -1122,7 +1041,6 @@
 <f53r.7,+P0>      sodar otos qoy tchy otey chos okod <->ykchody qokchy
 <f53r.8,+P0>      qotchol dar qoty chtor oltsho cto <->ykeeod o ytoyd
 <f53r.9,+P0>      otol chol ctheees os orol chod qoty<$>
-<f53v>     <! $Q=G $P=J $F=w $B=4 $I=H $L=A $H=1 $C=1>
 <f53v.1,@P0>      <%>tshorshey qodckhy epho oltshey daiin qopchy
 <f53v.2,+P0>      okeey daiin sheekol shom shol cthy dchom do
 <f53v.3,+P0>      ydaiin cphom chol dockhy cthol dam oty
@@ -1136,7 +1054,6 @@
 <f53v.11,+P0>     otsho or chear sheod chkodal
 <f53v.12,+P0>     ycheey kchy oky kody <->ydam
 <f53v.13,+P0>     yckhodaiin otoldy<$>
-<f54r>     <! $Q=G $P=K $F=x $B=3 $I=H $L=A $H=1 $C=1>
 <f54r.1,@P0>      <%>podaiin shodal qopchol cfheody <->opcheol chocphy
 <f54r.2,+P0>      ytodaiin otchey otchey qockhodal <->sockhody sar
 <f54r.3,+P0>      daiir cthody otal ekchody ol s or y <->ytchey dam
@@ -1149,7 +1066,6 @@
 <f54r.10,+P0>     tor ol dol or chol chol ckhol okol oky <->ytchor olkoldy
 <f54r.11,+P0>     daiin okor or ol ckhol chor chow dam <->or sho chol dom
 <f54r.12,+P0>     yor shodal o aiin al dol choekairoldam<$>
-<f54v>     <! $Q=G $P=L $F=x $B=3 $I=H $L=A $H=1 $C=1>
 <f54v.1,@P0>      <%>pcheodar chpal oloiin ckhey dar qokeey cpheeain sal
 <f54v.2,+P0>      dcheain cphaiin s ar cheor qodaiin cthaildy ypchal
 <f54v.3,+P0>      yair ykar oky cham chody ykoldam cheolam
@@ -1166,7 +1082,6 @@
 <f54v.14,+P0>     tar cphey tam aldam
 <f54v.15,+P0>     or alchy ytal dol chodoldy
 <f54v.16,+P0>     daiin chol oldaiin<$>
-<f56r>     <! $Q=G $P=O $F=z $B=1 $I=H $L=A $H=1 $C=1>
 <f56r.1,@P0>      <%>owchal chchswy oty esedy chy ychocphy chorchy chy
 <f56r.2,+P0>      chokchey chol choly korchy chykey choty shokaiin
 <f56r.3,+P0>      olchey chokchol chey keey qokeey chokeey choksy
@@ -1186,7 +1101,6 @@
 <f56r.17,+P0>     chokeey qokcheey schey daiin dy
 <f56r.18,+P0>     sho chokchy kchoar <->sotodan
 <f56r.19,+P0>     otchey keol daiin<$>
-<f56v>     <! $Q=G $P=P $F=z $B=1 $I=H $L=A $H=1 $C=1>
 <f56v.1,@P0>      <%>kcheat shol chey qokoiin shorqotcheol choror
 <f56v.2,+P0>      shodshey qoteeey qoteey daiin qoteey cthar
 <f56v.3,+P0>      ochey chol chol qotchey daiin choteeeydal
@@ -1203,7 +1117,6 @@
 <f56v.14,+P0>     cholcheo kchol chol choky chotor
 <f56v.15,+P0>     otchol chol chol daiin chotaiin
 <f56v.16,+P0>     sokchol chol chol daiin<$>
-<f58r>     <! $Q=H $P=C $F=b $B=2 $I=T $L=A $H=0>
 <f58r.1,@P0>      <%>korcholfy shofchy otoralchy chofchol sholy otaly dalm
 <f58r.2,+P0>      dshodal or ckhy olchear char tal ytal ytar olchokal
 <f58r.3,+P0>      ykechod dalaldam ytam choty otchy otaly shoty s
@@ -1245,7 +1158,6 @@
 <f58r.39,+P0>     dtshol dytal okarolol sheol qockhy qokaly salol dalam
 <f58r.40,+P0>     yroleeey arairaly pchody tshaly alols ykaly kar aram
 <f58r.41,+P0>     dchol chokal saiin dal okalsalchey<$>
-<f58v>     <! $Q=H $P=D $F=b $B=2 $I=T $L=A $H=0>
 <f58v.1,@P0>      <%>tol shokchy opaiin opaiin chofaly ypar ypal opal opaldaiin
 <f58v.2,+P0>      dair or chhaiin tair y qotalody saiin okeody qotair ar alor orky
 <f58v.3,+P0>      todal qotain showkwwhy qokeol okey qokalchal daly ar aim
@@ -1285,7 +1197,6 @@
 <f58v.37,+P0>     olkeey okar ar choky otair otol chokey cheeky dalar
 <f58v.38,+P0>     ykeeody qokar qoky keey qokol okal okor cheky sydy
 <f58v.39,+P0>     oshar qokain okam shear cher sarols<$>
-<f87r>     <! $Q=O $P=A $F=a $B=1 $I=H $L=A $H=4 $C=4>
 <f87r.1,@P0>      <%>poalshsal shocphor ypcho cpheo saiin oteodal saiin
 <f87r.2,+P0>      dcheeckhos chety cthodal yteodam cphecthy syty
 <f87r.3,+P0>      tchor oteedy ykeey cthhody keos sheekchey saiidy
@@ -1302,7 +1213,6 @@
 <f87r.14,+P0>     daiin shol cthey okeol cheor okeeodaiim
 <f87r.15,+P0>     shos cheol cheos ckhey saiin qockheoldaiin
 <f87r.16,+P0>     yteeor cheol dcheeol<$>
-<f87v>     <! $Q=O $P=B $F=a $B=1 $I=H $L=A $H=4 $C=4>
 <f87v.1,@P0>      <%>wcheey daiin cpheodar shody dcheody todor oeeepchody <->oldar
 <f87v.2,+P0>      schey ctheey qocthsy s <->dcheoky scth
 <f87v.3,+P0>      ycheockhy okey cthy <->yteeor ctos
@@ -1319,7 +1229,6 @@
 <f87v.14,+P0>     san ainy keoldair old <->ain atolg
 <f87v.15,+P0>     yksho qos <->arolor or <->al daraiing
 <f87v.16,+P0>     saiin olcthr<$>
-<f88r>     <! $Q=O $P=C $F=b $B=2 $I=P $L=A $H=4 $C=4>
 <f88r.7,@P0>      <%>dorsheoy ctheol qockhey dory sheor sholfchor dal chcthol
 <f88r.8,+P0>      ralsheom keolchear shekor qokor daiin sar saiin oky sam
 <f88r.9,+P0>      oain or om otam okeom cheeor qokeody dar or om cheody
@@ -1336,7 +1245,6 @@
 <f88r.29,+P0>     korchey qokol cheol chody qokol kchor choldal
 <f88r.30,+P0>     ykeeey cheor cheotey cheol qokeor chetchy ofal
 <f88r.31,+P0>     dar chear chol dol qoekeor cheom<$>
-<f88v>     <! $Q=O $P=D $F=b $B=2 $I=P $L=A $H=4 $C=4>
 <f88v.6,@P0>      <%>teodal lkeocheor roshckhy sorshy <->aiin cheokal saldaiin
 <f88v.7,+P0>      dshor shor qokeody qokeolchey chkeor qokeey daiin qokeom
 <f88v.8,+P0>      qoaiin cheoy olcheody qoekeol cho chckhy qoeey key cheokam
@@ -1354,7 +1262,6 @@
 <f88v.24,+P0>     daiin sheor sheedy daiin shoikhy qokeody doikhy dair
 <f88v.25,+P0>     ykeey sheor tos checkhy dain cheos cheockhy saldy
 <f88v.26,+P0>     saiin choky cheor shy<$>
-<f89r1>    <! $Q=O $P=F $F=y $B=2 $I=P $L=A $H=0>
 <f89r1.6,@P0>     <%>qoarshar qopcholy qokod chepydar sheey okorsheeos oldain
 <f89r1.7,+P0>     dshody qocthy chockhy dal chedy qokeody daldaiin chodaiin dal
 <f89r1.8,+P0>     qokeol chol qodaiin chol cheody qokechy daiin ctheody dam
@@ -1369,7 +1276,6 @@
 <f89r1.21,+P0>    taiin dam shoety dal qokchy ykchdy otcham ol sshraiin
 <f89r1.22,+P0>    ycheeor sheol qockhedy yty sheody qotol cheadchey dal
 <f89r1.23,+P0>    dain oteos cheody cheodain daiin chodaiin<$>
-<f89r2>    <! $Q=O $P=G $F=y $B=2 $I=P $L=A $H=0>
 <f89r2.6,@P0>     <%>qokcheody cheodal dair cholkeedy qokedy cheal cheo dal qoaiis shey cpheeedol deey qockhey chaldy daim
 <f89r2.7,+P0>     chosaiin cheodal daiin chy chedain dolchsyckheol daiin chody cheedy tchodol chor choldy chos dol okcheeg
 <f89r2.8,+P0>     tol daiin daiin daiinody qokeey cheoldy qody cheor sain daiin oky cheody cheoky<$>
@@ -1384,7 +1290,6 @@
 <f89r2.26,+P0>    scheor sy sorcheey dol cheor cheey keey qokeey daiin ycheary okeey keeokechy cthey daiin dy
 <f89r2.27,+P0>    qokol cheor okoiin okeoy qoeey cheor cheey qokeol cheal s aiin ocheol soiiin dair chey daiin
 <f89r2.28,+P0>    orain ar ain oldaiin qoaiin ol chkaiin daiin okar dairy?dair<$>
-<f89v2>    <! $Q=O $P=I $F=y $B=2 $I=P $L=A $H=0>
 <f89v2.7,@P0>     <%>kosar sheol saiin koiin chtodaiin pd?n choty qofoiin dy qopdal doiir ofaiin olcfheoldam
 <f89v2.8,+P0>     dain ykodaiir okor chear otees ckhy s aiin ckhey otaiin okar dain okol ol chor dar
 <f89v2.9,+P0>     ychey okeey qoeol daiin chor chos cheos qoleeeey dal chody cheor chey qoaiin chody
@@ -1397,7 +1302,6 @@
 <f89v2.20,+P0>    dol dair chey okaiin shy daiin odor sheos aiin daikeody qokorar sheody qoko ltcheody otal
 <f89v2.21,+P0>    dar qockhy qokal okeoy chockh daiin odaiin ykeody okolssheey keeody daiin qokos okeom
 <f89v2.22,+P0>    ockhody daiin ykam s chtychy cthey dairair chool loy daircheo daiin<$>
-<f89v1>    <! $Q=O $P=J $F=y $B=2 $I=P $L=A $H=0>
 <f89v1.5,@P0>     <%>koldal sfal cfhey ofcheol opolsy daiin qopol oldaiin octhody
 <f89v1.6,+P0>     dor sheey qokol cheol cthody qockhy dain yteey otar cthol
 <f89v1.7,+P0>     qokey daiin cheey cthody qoor shear sol chor chearory
@@ -1414,7 +1318,6 @@
 <f89v1.18,+P0>    qokol sheol qokol dal choldam qoeey saiin ols chokaiin
 <f89v1.19,+P0>    sar a daiin ckhy qotchy okol ycheo cthody okol olkaycthy
 <f89v1.20,+P0>    solchey okchol sair daiin okalcholdy<$>
-<f90r1>    <! $Q=O $P=L $F=z $B=1 $I=H $L=A $H=0>
 <f90r1.1,@P0>     <%>poleeol qokeol qokchod choly cthog
 <f90r1.2,+P0>     yshol tor sheor qotchor qoky darala
 <f90r1.3,+P0>     dair shkeea s sary okar ykorshy lkaldy
@@ -1424,14 +1327,12 @@
 <f90r1.7,+P0>     dar chos qocthy qokcha shko qokol oteey chofy ykeody qokod
 <f90r1.8,+P0>     kor sheol qodar oko ykeey qokeey qodar qokeed s choky
 <f90r1.9,+Pr>     ykodar qoekchy shokol okam<$>
-<f90r2>    <! $Q=O $P=M $F=z $B=1 $I=H $L=A $H=0>
 <f90r2.1,@P0>     <%>toealchs shakol sheo qoekeey <->soeeol qoteody
 <f90r2.2,+P0>     saiin ckheo saiin qockhey s ykeeody <->scheey chos ckhs
 <f90r2.3,+P0>     dsheeos qokeod qokeo chol ol okal <->saiin ctheosar
 <f90r2.4,+P0>     al s oin cheo ro sokeey qokeeas <->al aral oyr
 <f90r2.5,+P0>     ychor ckhor qoeeor okaiin dom <->olcheo rodaiin
 <f90r2.6,+P0>     daiin qokor okoiin daiin<$>
-<f90v2>    <! $Q=O $P=O $F=z $B=1 $I=H $L=A $H=0>
 <f90v2.1,@P0>     <%>cwhdaiwhy qocfhey opolraiin ofchedal s? <->shese shodaiin sheas
 <f90v2.2,+P0>     podchey ctheod ikheeos cheey ykeey s ois <->qokchas soin sam
 <f90v2.3,+P0>     saiin sheom sheey keeos ol cheeor chy <->shy tchody okeeom
@@ -1440,7 +1341,6 @@
 <f90v2.6,+P0>     sal sheol shey qokeey qokeol cheody s <->ykeeoldarchody y
 <f90v2.7,+P0>     shey s sheeyl sheol sheody tol sheocty <->oteey chodar chog
 <f90v2.8,+P0>     teeas qkeody qokchy oteeol daiin<$>
-<f90v1>    <! $Q=O $P=P $F=z $B=1 $I=H $L=A $H=0>
 <f90v1.1,@P0>     <%>pcheor chodar oleees chepy shol <->shckheo <->otol shey <->cheor cheokeey
 <f90v1.2,+P0>     tshor olsheod qodaiin qokeor sy <->oraiin <->ykeeol <->octheody cthhhy
 <f90v1.3,+P0>     daiin shody cfheos qockhy cholol <->sals <->sol <->yteey or cheeytey
@@ -1452,7 +1352,6 @@
 <f90v1.9,+P0>     sheor ol qokeeoky okeeol okeeodaiin ytol <->sor asiin aiin
 <f90v1.10,+P0>    ykeeor cheos qkhey cheos oteol okechod <->oeey keeos aiiin
 <f90v1.11,+P0>    deeocthey keeeol sheol ctsheol daiin<$>
-<f93r>     <! $Q=Q $P=A $F=a $B=1 $I=H $L=A $H=4 $C=4>
 <f93r.1,@P0>      <%>kodshol otolsheeos octhodaly opalepam oepchksheey qotodain s oar
 <f93r.2,+P0>      ycham s chol chotom cthodar sheo s oteodal s <->ofchoshy cthoshol
 <f93r.3,+P0>      dsho dal dalody ytchchy dam chody dalol <->schodchy qotchd
@@ -1485,7 +1384,6 @@
 <f93r.30,+P0>     shodaiin qokcho cthol
 <f93r.31,+P0>     ol chol cthol olchod
 <f93r.32,+P0>     dol chokal schos<$>
-<f93v>     <! $Q=Q $P=B $F=a $B=1 $I=H $L=A $H=4 $C=4>
 <f93v.1,@P0>      <%>possheody qoteeo qoshocphy opchody opor <->opchy <->otchdal or shodaiin
 <f93v.2,+P0>      yteeody qotody qotchol qocthody ytey <->oky <->daiin <->dar cthog
 <f93v.3,+P0>      dchos chody qockhol oky cheodaiin oty <->daiin <->otal <->dair okol
@@ -1496,7 +1394,6 @@
 <f93v.8,+P0>      dcho chody teol sheol cheeoldair okchey cthey <->dsheog okeey dama
 <f93v.9,+P0>      odeeeodl cheodar oksho chody okchey cthol oly <->ytchol <->sar <->dar
 <f93v.10,+P0>     ychol chs ckhy scheeol<$>
-<f96r>     <! $Q=Q $P=K $F=z $B=1 $I=H $L=A $H=4 $C=4>
 <f96r.1,@P0>      <%>tor cheeor ckheos olsheeosol cpheol cpheor chodar
 <f96r.2,+P0>      ytol oteeor sheol oteey qokeody qokeeody cthey
 <f96r.3,+P0>      toaiin cthhodal chos ckheody keody chodol oty
@@ -1510,7 +1407,6 @@
 <f96r.11,+P0>     teol cheody shodol qokchod <->s <->aiin chokey
 <f96r.12,+P0>     dcheor cheol cheodaiin ol <->dy <->d <->chs <->archeody
 <f96r.13,+P0>     oteodsho qotchos<$>
-<f96v>     <! $Q=Q $P=L $F=z $B=1 $I=H $L=A $H=4 $C=4>
 <f96v.1,@P0>      <%>psheessheeor qoepsheody odar ocpheeo <->opar ysar osoj
 <f96v.2,+P0>      ytear yteor olcheey dteodoiin <->saro <->qochesycheom
 <f96v.3,+P0>      dcheoteos cpheos sor chcthory <->cth <->ytchey daiin
@@ -1524,7 +1420,6 @@
 <f96v.11,+P0>     sar os checkhey socthh
 <f96v.12,+P0>     sosar cheekeo dain
 <f96v.13,+P0>     soysar cheor<$>
-<f99r>     <! $Q=S $P=A $F=a $B=1 $I=P $L=A $H=0>
 <f99r.15,@P0>     <%>pcheody oteody daiin cpheey tshol dal cfheol olaiin sar
 <f99r.16,+P0>     saroshy shor sshor sheol kolsheol qoeol sholkol ckhol ckhory
 <f99r.17,+P0>     dcheor chr al yckhy okeol ckhor oraiin chor qokeeor chory
@@ -1543,7 +1438,6 @@
 <f99r.50,+P0>     qokeeo okeey qokeey okesy qokeeo sar sheseky or al
 <f99r.51,+P0>     yshaiin ykhey octhey dydaiin okor okeey shctysh
 <f99r.52,+P0>     ychor ols oragairom<$>
-<f99v>     <! $Q=S $P=B $F=a $B=1 $I=P $L=A $H=0>
 <f99v.10,@P0>     <%>sol cheols ockhey qockhhy qkoldy s <->ok oleees oteey dain
 <f99v.11,+P0>     okoiin choty qokchol qokeol okoldy <->qkholdy toly daiin
 <f99v.12,+P0>     qokeo qokeol chockhy otol daiin oty <->otockey da choraiin
@@ -1563,7 +1457,6 @@
 <f99v.41,+P0>     qockhol oiin shody qokol aiidal <->aiidaiim
 <f99v.42,+P0>     olsheol olkeol okol or oraloly <->ykeol okal okaldaly
 <f99v.43,+P0>     ychololkeeoldy<$>
-<f100r>    <! $Q=S $P=C $F=b $B=2 $I=P $L=A $H=0>
 <f100r.12,@P0>    <%>pcheol sheod qocpheeckhy shodol cwhdawoto cho?os sheey chcthho s
 <f100r.13,+P0>    dsheor cthey qokeey oteey ykeeodain rorarydaiin daiin deeomchol
 <f100r.14,+P0>    shor chkeey qoteey qokeody qoteold qokeol so raiin otal ykeeeo
@@ -1574,7 +1467,6 @@
 <f100r.25,+P0>    sheor qkeeody chol daiin ctheol olcheol cheky cheol cheockhy okeol
 <f100r.26,+P0>    yaiin chekeey chol cholody chos olchor qokeol okeeol cheols al
 <f100r.27,+P0>    chol cheol cho chckheody otolchey<$>
-<f100v>    <! $Q=S $P=D $F=b $B=2 $I=P $L=A $H=0>
 <f100v.14,@P0>    <%>cwhdeecwhy sheocphy qoteody ckhoor ar chor oteey daiin qokomo
 <f100v.15,+P0>    sor cheey dair ol cheol qoolkeey chol cheey qokeol chotols
 <f100v.16,+P0>    ykeeol chol chey eeoseeos sheeo okeol ches okeor okeol dy
@@ -1584,7 +1476,6 @@
 <f100v.20,+P0>    ycheoky shokeesy qokeey chokeol saraloaly cheor ol chockhar
 <f100v.21,+P0>    soral okor ol choy ly araroy okar cheeeal cheokeol orey
 <f100v.22,+P0>    daiin cheky chory<$>
-<f101r>    <! $Q=S $P=E $F=y $B=2 $I=P $L=A $H=0>
 <f101r.1,@P0>     <%>pcheol sheol olshey qockhol shor yteol sheockhey qpol chear saiin oleeey qkeey chopcheey checkhey cpheocthy ykchy cheey chekeey dal chey
 <f101r.2,+P0>     dol chokeey chkey cthey okalchol kolokeey r or ol okolol olchey qokchal okey qokeol kar shey teol or oiiin choldaiin<$>
 <f101r.3,+P0>     <%>wolcwheol okeor r sheol qokol shey dol shey okeey ctheey yteeoldy kchol olsheody or ol sheor qotoiir otol sheey ssheo tchey oldar am
@@ -1595,7 +1486,6 @@
 <f101r.8,+P0>     olaiin oteol chor oteey chokchey kordaiin shok chol chol qoky daiin ol s al ydar daiinor ory okeey daiin shey daiin okol cheor
 <f101r.9,+P0>     daiin okeol qokcheol ykeor dar ol otechy ykeor dor aiin chls cheol okeol shey qodar soiin choko qokeol daiin odar okchol cheorcheky
 <f101r.10,+P0>    ysho qykeeol chol sho odor dor chees ykeol chol dol kor aithy ol chso sha olcheeol kolshey okeoly oiin aiioly<$>
-<f101v>    <! $Q=S $P=H $F=y $B=2 $I=P $L=A $H=0>
 <f101v.19,@P0>    <%>tolchor cheopor orody cpheyr shee folsoiin otsheey otch???ykchopcholy chor or choror sy <->dorar <->okoraiin orolodain
 <f101v.20,+P0>    or aiin or o or odam chor s aiin okor cheeor sheeol qokol et???ol qoor cheey qykeod oeeo r choy s <->okeeody <->chodaiin cthy okody dar
 <f101v.21,+P0>    ycheor o?o dain cheokal ykhody cheeods oraiin qoeey cthey ???eocthy dain cheod? dydy<$>
@@ -1606,7 +1496,6 @@
 <f101v.26,+P0>    olaiin okeol cheo kol ches sheey qoor qokeody cheor okeo ???oiin cheey cthey ory ctheey qokeey shol ody cheol oralar shey qokarary
 <f101v.27,+P0>    sal chol choly okeey dal qol shckheol chol cthear keeol ???cheeo olchs oraiin qokeeey soiin qodaiin cheol qokeey daiin cheodam
 <f101v.28,+Pc>    teol cheol etchey ???cheor cheol cthol cholaiin cholqkar<$>
-<f102r1>   <! $Q=S $P=L $F=z $B=1 $I=P $L=A $H=0>
 <f102r1.3,@P0>    <%>polaiin shocthy qoteol loiiin oteeor cpheodar sholdaiin
 <f102r1.4,+P0>    dsheody okeeoy kod? chkeeody daraiiin ctheoly qokcheololain
 <f102r1.5,+P0>    ytol sheol she olaiin orain oraroekeol chol ekey qokol dain
@@ -1620,7 +1509,6 @@
 <f102r1.15,+P0>   or chol daiin dykeor sheey qokeody dor os ykeeykam
 <f102r1.16,+P0>   ddor chordam <->soraiin ykeeydy okeol doeoear <->s aral dor
 <f102r1.17,+P0>   ydararody <->oldaiin sody chockhyoly<$>
-<f102r2>   <! $Q=S $P=M $F=z $B=1 $I=P $L=A $H=0>
 <f102r2.2,@P0>    <%>lsais azg cheey cfhey poraiin chefoly
 <f102r2.3,+P0>    ycheor olaiin olsho qokol olaiin oldam
 <f102r2.4,+P0>    daiin ckheeol oldor okol cheodor sor airam
@@ -1636,7 +1524,6 @@
 <f102r2.18,+P0>   otol shey qockhey dol shey dol sheey qokol daiin oky oky
 <f102r2.19,+P0>   qokeod okeal okeol ycheo ckhey qkhody qokey ody keeody chody
 <f102r2.20,+P0>   ykeey keeol cheos ydeeal cheody ykeeadolchey<$>
-<f102v2>   <! $Q=S $P=O $F=z $B=1 $I=P $L=A $H=0>
 <f102v2.17,@P0>   <%>podeesho oteeos sheor qoteeochckhhy shkeey chekeod
 <f102v2.18,+P0>   ocheos chyokeor okeol okeol shyy
 <f102v2.19,+P0>   deeeo qoeeor oeoikhy cheos o l or ol okeeos ain
@@ -1654,7 +1541,6 @@
 <f102v2.37,+P0>   tchorar chey kor or cthey qoeeey qokeey okeoroly sar
 <f102v2.38,+P0>   dar cheey ckheey qokeor okey chos sho ykeey okeeo rain
 <f102v2.39,+P0>   yotaiin cheor cheekey orain<$>
-<f102v1>   <! $Q=S $P=P $F=z $B=1 $I=P $L=A $H=0>
 <f102v1.7,@P0>    <%>poaiin ockhey pchol doiin shey shockhsy sheocthy qokeody
 <f102v1.8,+P0>    dairn ol chey ctheol qokeor osaiin cheor qokey choky
 <f102v1.9,+P0>    teody ckheey qokeol sheky qockheor or cheorchol qoteor dar
