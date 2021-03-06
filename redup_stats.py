@@ -1,12 +1,12 @@
-import sys
-import codecs
 import re
+import sys
 import Levenshtein
 import random
 import string
+import time
+from datetime import datetime
 from matplotlib import pyplot as plt
 from adjustText import adjust_text
-from collections import Counter
 
 
 def frmt(myfloat,dec=3):
@@ -27,10 +27,10 @@ def count_redup(words,is_log):
 	    #print words[i]
 	    #print words[i-2]+" "+words[i-1]+" len:"+str(len(words[i]))
 	    #print words[i+1]
-	    mylog("redup "+words[i]+"."+words[i+1])
+	    mylog("redup "+words[i]+"."+words[i+1]+" "+str(i))
 	  elif dist==1 and len(words[i])>3 and len(words[i+1])>3:
 	    n_partial+=1
-	    mylog( "partial "+words[i]+"."+words[i+1])
+	    mylog( "partial "+words[i]+"."+words[i+1]+" "+str(i))
 	return n_redup,n_partial
 	
 def scramble(mylist):
@@ -113,7 +113,7 @@ def print_res_list(result):
       sys.stdout.write(" "+frmt(result[i]))
   print()
   
-def scatter_plot(records,nx,ny,x_axis,y_axis):
+def scatter_plot(records,nx,ny,x_axis,y_axis,prefix):
   xs=list()
   ys=list()
   labels=list()
@@ -128,6 +128,8 @@ def scatter_plot(records,nx,ny,x_axis,y_axis):
     ys.append(rec[ny])
   f = plt.figure()
   scatter = plt.scatter(xs, ys, s=50, c=colors, edgecolors='w')
+  plt.xlim(0)
+  plt.ylim(0)
   texts = []
   for x, y, s in zip(xs, ys, labels):
     texts.append(plt.text(x, y, s))
@@ -138,8 +140,11 @@ def scatter_plot(records,nx,ny,x_axis,y_axis):
             expand_points=(1, 1), expand_text=(1, 1),
             arrowprops=dict(arrowstyle="-", color='black', lw=0.5))
   #plt.show()
-  img=(x_axis+'_'+y_axis).replace(' ','')
-  plt.savefig('out/'+img+'.png')
+  #img=(x_axis+'_'+y_axis).replace(' ','')
+  ts=time.time()
+  timestr=datetime.fromtimestamp(ts).strftime('%Y%m%d%H%M%S')
+
+  plt.savefig('out/'+prefix+"_"+timestr+'.png')
 
 
 is_log=True
@@ -156,7 +161,8 @@ for f in sys.argv[1:]:
   allres.append(res)
   print_res_list(res)
 mylog("tot "+str([tot_couples,tot_red,tot_partial]))
-scatter_plot(allres,3,5,"Full Reduplication %","Partial Reduplication %")
+prefix=re.sub("/[^/]*$","",sys.argv[1]).replace('/','_')
+scatter_plot(allres,3,5,"Full Reduplication %","Partial Reduplication %",prefix)
 
 
 
