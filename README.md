@@ -4,6 +4,7 @@ Language text corpus collected by Brian Cham:
 Voynich transliteration by Zandbergen and Landini
   http://www.voynich.nu/data/
 
+```
 Needed packages:
 pip3 install adjustText
 pip3 install Levenshtein
@@ -21,7 +22,7 @@ python3 redup_stats.py `ls -1 texts/brian_cham_utf8/*|grep -v PML` texts/vms/EVA
 Full versus Partial Reduplication % per scribe:
 
 python3 redup_stats.py texts/vms/scribes/S*
-
+```
 
 TODO:
 convert to lowercase?
