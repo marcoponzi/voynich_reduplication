@@ -55,17 +55,16 @@ def proc_file(infile):
     # replace punctuation with spaces
     with_spaces=with_spaces.translate(translator)
 
-  #unicode_string = with_spaces.decode("utf-8")
-  unicode_string=with_spaces
-  mylog( "len_decoded: "+str(len(unicode_string)))
+  lowercase_string=with_spaces.lower()
+  mylog( "len_decoded: "+str(len(lowercase_string)))
   mylog(with_spaces[:200])
 
   msg=""
   for i in range(0,10):
-    msg+= str(i)+":"+unicode_string[i]+"  "
+    msg+= str(i)+":"+lowercase_string[i]+"  "
   mylog(msg)
 
-  temp=unicode_string.split(' ')
+  temp=lowercase_string.split(' ')
   words=list()
   for w in temp:
     if (len(w)>0):
@@ -118,29 +117,35 @@ def scatter_plot(records,nx,ny,x_axis,y_axis,prefix):
   ys=list()
   labels=list()
   colors=list()
+  markers=list()
   for rec in records:
-    labels.append(rec[0])
-    if (rec[0].startswith('EVA')):
-      colors.append('#2222ff')
+    if (rec[nx]+rec[ny])>0.2:
+      labels.append(rec[0])
     else:
-      colors.append('#ff8800')
+      labels.append('')
+    if (rec[0].startswith('EVA')):
+      colors.append('#0088ff')
+      markers.append('s')
+    else:
+      colors.append('#ff9933')
+      markers.append('o')
     xs.append(rec[nx])
     ys.append(rec[ny])
   f = plt.figure()
-  scatter = plt.scatter(xs, ys, s=50, c=colors, edgecolors='w')
+  for i in range(0,len(xs)):
+    scatter = plt.scatter(xs[i], ys[i], s=80, marker=markers[i], c=colors[i], edgecolors='w')
   plt.xlim(0)
   plt.ylim(0)
   texts = []
-  for x, y, s in zip(xs, ys, labels):
-    texts.append(plt.text(x, y, s))
+  for x, y, l in zip(xs, ys, labels):
+    texts.append(plt.text(x, y, l))
   plt.xlabel(x_axis)
   plt.ylabel(y_axis)
 
   adjust_text(texts, force_points=0.2, force_text=0.2,
             expand_points=(1, 1), expand_text=(1, 1),
-            arrowprops=dict(arrowstyle="-", color='black', lw=0.5))
-  #plt.show()
-  #img=(x_axis+'_'+y_axis).replace(' ','')
+            arrowprops=dict(arrowstyle="-", color='#444477', lw=0.5))
+
   ts=time.time()
   timestr=datetime.fromtimestamp(ts).strftime('%Y%m%d%H%M%S')
 
