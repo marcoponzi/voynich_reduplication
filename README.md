@@ -26,4 +26,5 @@ python3 redup_stats.py texts/vms/scribes/S*
 ```
 
 TODO:
-convert to lowercase?
+add synthetic vms (TS, Fisk, mod2)
+logging of weird characetrs (e.g. CZE LIT)
