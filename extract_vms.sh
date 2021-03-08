@@ -51,6 +51,18 @@ do
 grep '^<f'$f'[rv]' texts/vms/EVA >> texts/vms/scribes/S3
 done
 
+for f in {103..114}
+do
+grep '^<f'$f'[rv]' texts/vms/EVA >> texts/vms/scribes/S3
+done
+# from line 13 of f115r
+for i in {13..45}
+do
+grep '^<f115r\.'$i',' texts/vms/EVA >> texts/vms/scribes/S3
+done
+grep '^<f115v' texts/vms/EVA >> texts/vms/scribes/S3
+grep '^<f116r' texts/vms/EVA >> texts/vms/scribes/S3
+
 for f in 67 68 69 70 71 72 73
 do
 grep '^<f'$f'[rv]' texts/vms/EVA >> texts/vms/scribes/S4
@@ -62,16 +74,6 @@ do
 grep '^<f'$f texts/vms/EVA >> texts/vms/scribes/S5
 done
 
-for f in {103..114}
-do
-grep '^<f'$f'[rv]' texts/vms/EVA >> texts/vms/scribes/S5
-done
-# from line 13 of f115r
-for i in {13..45}
-do
-grep '^<f115r\.'$i',' texts/vms/EVA >> texts/vms/scribes/S5
-done
-grep '^<f115v' texts/vms/EVA >> texts/vms/scribes/S5
-grep '^<f116r' texts/vms/EVA >> texts/vms/scribes/S5
+
 
 
