@@ -1,5 +1,5 @@
 IVTTDIR=~/rec/voynich/software/ivtt
-# a1=@nnn; for special chars, then replaced to 'w'
+# a1=@nnn; for special chars, then replaced with the last digit @123;->3
 # c5=remove comments
 # h1=keep uncertain spaces; h2=ignore uncertain spaces
 # s1=blank for spaces
@@ -9,19 +9,19 @@ IVTTDIR=~/rec/voynich/software/ivtt
 # <! page header (removed)
 
 $IVTTDIR/ivtt $IVTTDIR/ZL_ivtff_1r.txt -a1 -c5 -h1 -s1 -u1 -@L -f0 +LB |\
-  grep -v '<!'|sed -e "s/[{}']//g"| sed -e 's/@[0-9]*;/w/g' > texts/vms/EVA_u_B
+  grep -v '<!'|sed -e "s/[{}']//g"| sed -e 's/@[0-9][0-9]\([0-9]\);/\1/g' > texts/vms/EVA_u_B
    
 $IVTTDIR/ivtt $IVTTDIR/ZL_ivtff_1r.txt -a1 -c5 -h1 -s1 -u1 -@L -f0 +LA |\
-  grep -v '<!'|sed -e "s/[{}']//g"| sed -e 's/@[0-9]*;/w/g' > texts/vms/EVA_u_A
+  grep -v '<!'|sed -e "s/[{}']//g"| sed -e 's/@[0-9][0-9]\([0-9]\);/\1/g' > texts/vms/EVA_u_A
    
 $IVTTDIR/ivtt $IVTTDIR/ZL_ivtff_1r.txt -a1 -c5 -h2 -s1 -u1 -@L -f0 +LA |\
-  grep -v '<!'|sed -e "s/[{}']//g"| sed -e 's/@[0-9]*;/w/g' > texts/vms/EVA_A
+  grep -v '<!'|sed -e "s/[{}']//g"| sed -e 's/@[0-9][0-9]\([0-9]\);/\1/g' > texts/vms/EVA_A
    
 $IVTTDIR/ivtt $IVTTDIR/ZL_ivtff_1r.txt -a1 -c5 -h2 -s1 -u1 -@L -f0 +LB |\
-  grep -v '<!'|sed -e "s/[{}']//g"| sed -e 's/@[0-9]*;/w/g' > texts/vms/EVA_B
+  grep -v '<!'|sed -e "s/[{}']//g"| sed -e 's/@[0-9][0-9]\([0-9]\);/\1/g' > texts/vms/EVA_B
   
 $IVTTDIR/ivtt $IVTTDIR/ZL_ivtff_1r.txt -a1 -c5 -h2 -s1 -u1 -@L -f0 |\
-  grep -Ev '<!|#'|sed -e "s/[{}']//g"| sed -e 's/@[0-9]*;/w/g' > texts/vms/EVA
+  grep -Ev '<!|#'|sed -e "s/[{}']//g"| sed -e 's/@[0-9][0-9]\([0-9]\);/\1/g' > texts/vms/EVA
 
 rm texts/vms/scribes/S*
 for f in {1..24} 25 27 28 29 30 32 35 36 37 38 42 44 45 47 49 51 \
@@ -75,5 +75,10 @@ grep '^<f'$f texts/vms/EVA >> texts/vms/scribes/S5
 done
 
 
-
+for text_type in Circular Label Paragraph Radial
+do
+lett=`echo $text_type | grep -o '^.' `
+$IVTTDIR/ivtt $IVTTDIR/ZL_ivtff_1r.txt -a1 -c5 -h2 -s1 -u1 +@$lett -f0 |\
+  grep -Ev '<!|#'|sed -e "s/[{}']//g"| sed -e 's/@[0-9][0-9]\([0-9]\);/\1/g' > texts/vms/text_type/$text_type
+done
 
