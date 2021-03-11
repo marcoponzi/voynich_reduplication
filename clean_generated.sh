@@ -4,4 +4,5 @@ cat texts/generated/donald_fisk/generated-voynich-manuscript.html | head -4602 |
  
 grep -v '^#' texts/generated/timm_and_schinner/generated_text.txt > texts/generated/clean/ts
 
-cp texts/generated/rene_zandbergen/pliny_mod2.txt texts/generated/clean/rz
+cp texts/generated/rene_zandbergen/pliny_mod1.txt texts/generated/clean/rz1
+cp texts/generated/rene_zandbergen/pliny_mod2.txt texts/generated/clean/rz2
