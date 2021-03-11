@@ -23,6 +23,11 @@ python3 redup_stats.py `ls -1 texts/brian_cham_utf8/*|grep -v PML` texts/vms/EVA
 Full versus Partial Reduplication % per scribe:
 
 python3 redup_stats.py texts/vms/scribes/S*
+
+Triple reduplication:
+
+python3 redup_stats.py `ls -1 texts/brian_cham_utf8/*|grep -v PML` texts/vms/EVA* texts/generated/clean/df texts/generated/clean/ts
+
 ```
 
 TODO:
