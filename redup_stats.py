@@ -80,7 +80,6 @@ def proc_file(infile):
   mylog(" ")
 
   n_redup,n_partial=count_redup(words,is_log)
-  fname=re.sub('.*/','',infile)
   mylog( "ORIG "+infile+" "+str(n_redup)+" "+frmt(100.0*n_redup/float(len(words)-1))+\
      " "+str(n_partial)+" "+frmt(100.0*n_partial/float(len(words)-1)))
 
@@ -97,7 +96,7 @@ def proc_file(infile):
   
   n_redup_s=float(tot_red)/N_SCR
   n_partial_s=float(tot_partial)/N_SCR
-  return [fname, (len(words)-1), (n_redup), (100.0*n_redup/float(len(words)-1)), \
+  return [infile, (len(words)-1), (n_redup), (100.0*n_redup/float(len(words)-1)), \
    (n_partial), (100.0*n_partial/float(len(words)-1)), \
    (n_redup_s), (100.0*n_redup_s/float(len(words)-1)), \
    (n_partial_s), (100.0*n_partial_s/float(len(words)-1))]
@@ -120,11 +119,15 @@ def scatter_plot(records,nx,ny,x_axis,y_axis,prefix):
   markers=list()
   for rec in records:
     if (rec[nx]+rec[ny])>0.2:
-      labels.append(rec[0])
+      fname=re.sub('.*/','',rec[0])
+      labels.append(fname)
     else:
       labels.append('')
-    if (rec[0].startswith('EVA')):
+    if ('vms/EVA' in rec[0]):
       colors.append('#0088ff')
+      markers.append('s')
+    elif ('generated' in rec[0]):
+      colors.append('#55ff55')
       markers.append('s')
     else:
       colors.append('#ff9933')
