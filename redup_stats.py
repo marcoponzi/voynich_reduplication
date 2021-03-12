@@ -7,6 +7,8 @@ import time
 from datetime import datetime
 from matplotlib import pyplot as plt
 from adjustText import adjust_text
+from collections import Counter
+
 
 
 def frmt(myfloat,dec=3):
@@ -21,28 +23,41 @@ def count_redup(words,islog):
 	n_redup=0
 	n_partial=0
 	n_triple=0
-	previous=False
+	previous_red=False
+	previous_part=False
+	redup_words=list()
+	partial_words=list()
 	for i in range(0,len(words)-1):
 	  dist=Levenshtein.distance(words[i],words[i+1])
 	  if dist==0  and len(words[i])>1: # ignore single char reduplication (see TXB)
 	    n_redup+=1
-	    if previous:
+	    redup_words.append(words[i+1])
+	    if not(previous_red):
+	      redup_words.append(words[i])
+	    if previous_red or previous_part:
 	      n_triple+=1
 	      mylog("triple_redup "+words[i-1]+"."+words[i]+"."+words[i+1]+" "+str(i),islog)
 	    else:
 	      mylog("redup "+words[i]+"."+words[i+1]+" "+str(i),islog)
-	    previous=True
-	  elif dist==1 and len(words[i])>3 and len(words[i+1])>3:
+	    previous_red=True
+	    previous_part=False
+	  elif dist==1 and len(words[i])>2 and len(words[i+1])>2:
 	    n_partial+=1
-	    if previous:
+	    partial_words.append(words[i+1])
+	    if not(previous_part):
+	      partial_words.append(words[i])
+	    if previous_red or previous_part:
 	      n_triple+=1
 	      mylog("triple_partial "+words[i-1]+"."+words[i]+"."+words[i+1]+" "+str(i),islog)
 	    else:
+	      partial_words.append(words[i])
 	      mylog("partial "+words[i]+"."+words[i+1]+" "+str(i),islog)
-	    previous=True
+	    previous_part=True
+	    previous_red=False
 	  else:
-	    previous=False
-	return n_redup,n_partial,n_triple
+	    previous_part=False
+	    previous_red=False
+	return n_redup,n_partial,n_triple,redup_words,partial_words
 	
 def scramble(mylist):
   newlist=mylist
@@ -53,9 +68,8 @@ def scramble(mylist):
     newlist[j]=newlist[i]
     newlist[i]=temp
   return newlist
-
-
-def proc_file(infile):
+  
+def read_words(infile):
   with_spaces=''
   with open(infile, 'r') as myfile:
     text=myfile.read()
@@ -91,8 +105,12 @@ def proc_file(infile):
      msg1=msg1+w[j]+':'+str(j)+' '
    mylog(msg1,is_log)
   mylog(" ",is_log)
+  return words
 
-  n_redup,n_partial,n_triple=count_redup(words,is_log)
+
+def proc_file(infile):
+  words=read_words(infile)
+  n_redup,n_partial,n_triple,red_words,part_words=count_redup(words,is_log)
   mylog( "ORIG "+infile+" "+str(n_redup)+" "+frmt(100.0*n_redup/float(len(words)-1))+\
      " "+str(n_partial)+" "+frmt(100.0*n_partial/float(len(words)-1))+\
      " "+str(n_triple)+" "+frmt(100.0*n_triple/float(len(words)-2)),is_log)
@@ -104,7 +122,7 @@ def proc_file(infile):
   tot_triple=0
   for i in range(0,N_SCR):
     scrambled=scramble(words)
-    n_redup_s,n_partial_s,n_triple_s=count_redup(words, False)
+    n_redup_s,n_partial_s,n_triple_s,red_words,part_words=count_redup(words, False)
     tot_red+=n_redup_s
     tot_partial+=n_partial_s
     tot_triple+=n_triple_s
@@ -166,29 +184,62 @@ def scatter_plot(records,nx,ny,x_axis,y_axis,prefix):
             expand_points=(1, 1), expand_text=(1, 1),
             arrowprops=dict(arrowstyle="-", color='#444477', lw=0.5))
 
-  ts=time.time()
-  timestr=datetime.fromtimestamp(ts).strftime('%Y%m%d%H%M%S')
 
-  plt.savefig('out/'+prefix+"_"+timestr+'.png')
+
+  plt.savefig('out/'+prefix+"_"+get_time_str()+'.png')
+  
+def get_time_str():
+  ts=time.time()
+  return datetime.fromtimestamp(ts).strftime('%m%d%H%M%S')
+
+def do_redup_by_rank(files):
+  f = plt.figure()
+  nline=0
+  styles=('ro-','bs-','go-')
+  for f in files:
+    words=read_words(f)
+    cnt=Counter(words)
+    print(cnt.most_common(10))
+    n_redup,n_partial,n_triple,red_words,part_words=count_redup(words,is_log)
+    redcnt=Counter(red_words)
+    xs=list()
+    ys=list()
+    i=1
+    for w,n in cnt.most_common(20):
+      mylog(w+" "+str(cnt[w])+" "+str(redcnt[w])+" "+frmt(100.0*redcnt[w]/cnt[w]),is_log)
+      xs.append(i)
+      ys.append(100.0*redcnt[w]/cnt[w])
+      i=i+1
+    print(styles)
+    print(styles[0])
+    plt.plot(xs, ys, styles[nline])
+    nline+=1
+  plt.savefig('out/lines_'+get_time_str()+'.png')
+
+def do_redup_scatter(files):
+  print( "_data_ couples red %red partial %partial triple %triple scr.red scr.%r scr.partial scr.%partial scr.triple scr.%triple")
+  tot_couples=0
+  tot_red=0
+  tot_partial=0
+  allres=list()
+  for f in files:
+    res=proc_file(f)
+    tot_couples+=res[1]
+    tot_red+=res[2]
+    tot_partial+=res[4]
+    allres.append(res)
+    print_res_list(res)
+  mylog("tot "+str([tot_couples,tot_red,tot_partial]),is_log)
+  prefix=re.sub("/[^/]*$","",files[0]).replace('/','_')
+  scatter_plot(allres,3,5,"Full Reduplication %","Partial Reduplication %",prefix)
+  scatter_plot(allres,5,7,"Partial Reduplication %","Triple Reduplication %","triple"+prefix)
 
 
 is_log=True
-print( "_data_ couples red %red partial %partial triple %triple scr.red scr.%r scr.partial scr.%partial scr.triple scr.%triple")
-tot_couples=0
-tot_red=0
-tot_partial=0
-allres=list()
-for f in sys.argv[1:]:
-  res=proc_file(f)
-  tot_couples+=res[1]
-  tot_red+=res[2]
-  tot_partial+=res[4]
-  allres.append(res)
-  print_res_list(res)
-mylog("tot "+str([tot_couples,tot_red,tot_partial]),is_log)
-prefix=re.sub("/[^/]*$","",sys.argv[1]).replace('/','_')
-scatter_plot(allres,3,5,"Full Reduplication %","Partial Reduplication %",prefix)
-scatter_plot(allres,5,7,"Partial Reduplication %","Triple Reduplication %","triple"+prefix)
-
-
+if sys.argv[1]=='redup_scatter':
+  do_redup_scatter(sys.argv[2:])
+elif sys.argv[1]=='redup_by_rank':
+  do_redup_by_rank(sys.argv[2:])
+else:
+  print("arg1: redup_scatter redup_by_rank")
 

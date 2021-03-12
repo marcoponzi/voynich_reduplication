@@ -18,15 +18,16 @@ python3 redup_stats.py texts/brian_cham_utf8/* texts/vms/EVA*
 
 Removing the PML file:
 
-python3 redup_stats.py `ls -1 texts/brian_cham_utf8/*|grep -v PML` texts/vms/EVA*
+python3 redup_stats.py redup_scatter `ls -1 texts/brian_cham_utf8/*|grep -v PML` texts/vms/EVA*
 
 Full versus Partial Reduplication % per scribe:
 
-python3 redup_stats.py texts/vms/scribes/S*
+python3 redup_stats.py redup_scatter texts/vms/scribes/S*
 
 Triple reduplication:
 
-python3 redup_stats.py `ls -1 texts/brian_cham_utf8/*|grep -v PML` texts/vms/EVA* texts/generated/clean/df texts/generated/clean/ts
+python3 redup_stats.py redup_scatter `ls -1 texts/brian_cham_utf8/*|grep -v PML` \
+  texts/vms/EVA* texts/generated/clean/df texts/generated/clean/ts
 
 ```
 
