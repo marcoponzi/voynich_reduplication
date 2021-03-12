@@ -13,11 +13,11 @@ def frmt(myfloat,dec=3):
   form="{:."+str(dec)+"f}"
   return form.format(myfloat)
 
-def mylog(msg):
-  if is_log:
+def mylog(msg, islog):
+  if islog:
     print("LOG "+msg)
 
-def count_redup(words,is_log):
+def count_redup(words,islog):
 	n_redup=0
 	n_partial=0
 	n_triple=0
@@ -28,17 +28,17 @@ def count_redup(words,is_log):
 	    n_redup+=1
 	    if previous:
 	      n_triple+=1
-	      mylog("triple_redup "+words[i-1]+"."+words[i]+"."+words[i+1]+" "+str(i))
+	      mylog("triple_redup "+words[i-1]+"."+words[i]+"."+words[i+1]+" "+str(i),islog)
 	    else:
-	      mylog("redup "+words[i]+"."+words[i+1]+" "+str(i))
+	      mylog("redup "+words[i]+"."+words[i+1]+" "+str(i),islog)
 	    previous=True
 	  elif dist==1 and len(words[i])>3 and len(words[i+1])>3:
 	    n_partial+=1
 	    if previous:
 	      n_triple+=1
-	      mylog("triple_partial "+words[i-1]+"."+words[i]+"."+words[i+1]+" "+str(i))
+	      mylog("triple_partial "+words[i-1]+"."+words[i]+"."+words[i+1]+" "+str(i),islog)
 	    else:
-	      mylog("partial "+words[i]+"."+words[i+1]+" "+str(i))
+	      mylog("partial "+words[i]+"."+words[i+1]+" "+str(i),islog)
 	    previous=True
 	  else:
 	    previous=False
@@ -69,33 +69,33 @@ def proc_file(infile):
     with_spaces=re.sub('[•–·]',' ',with_spaces)
 
   lowercase_string=with_spaces.lower()
-  mylog( "len_decoded: "+str(len(lowercase_string)))
-  mylog(with_spaces[:200])
+  mylog( "len_decoded: "+str(len(lowercase_string)),is_log)
+  mylog(with_spaces[:200],is_log)
 
   msg=""
   for i in range(0,10):
     msg+= str(i)+":"+lowercase_string[i]+"  "
-  mylog(msg)
+  mylog(msg,is_log)
 
   temp=lowercase_string.split(' ')
   words=list()
   for w in temp:
     if (len(w)>0):
       words.append(w)
-  mylog(str(len(words)))
+  mylog(str(len(words)),is_log)
   #print(words)
   for i in range(0,2):
    w=words[i]
    msg1=""
    for j in range(0,len(w)):
      msg1=msg1+w[j]+':'+str(j)+' '
-   mylog(msg1)
-  mylog(" ")
+   mylog(msg1,is_log)
+  mylog(" ",is_log)
 
   n_redup,n_partial,n_triple=count_redup(words,is_log)
   mylog( "ORIG "+infile+" "+str(n_redup)+" "+frmt(100.0*n_redup/float(len(words)-1))+\
      " "+str(n_partial)+" "+frmt(100.0*n_partial/float(len(words)-1))+\
-     " "+str(n_triple)+" "+frmt(100.0*n_triple/float(len(words)-2)))
+     " "+str(n_triple)+" "+frmt(100.0*n_triple/float(len(words)-2)),is_log)
 
   #N_SCR=20
   N_SCR=3
@@ -108,7 +108,7 @@ def proc_file(infile):
     tot_red+=n_redup_s
     tot_partial+=n_partial_s
     tot_triple+=n_triple_s
-    mylog( "scrambled: "+str(n_redup_s)+" "+str(n_partial_s))
+    mylog( "scrambled: "+str(n_redup_s)+" "+str(n_partial_s),is_log)
   
   n_redup_s=float(tot_red)/N_SCR
   n_partial_s=float(tot_partial)/N_SCR
@@ -185,7 +185,7 @@ for f in sys.argv[1:]:
   tot_partial+=res[4]
   allres.append(res)
   print_res_list(res)
-mylog("tot "+str([tot_couples,tot_red,tot_partial]))
+mylog("tot "+str([tot_couples,tot_red,tot_partial]),is_log)
 prefix=re.sub("/[^/]*$","",sys.argv[1]).replace('/','_')
 scatter_plot(allres,3,5,"Full Reduplication %","Partial Reduplication %",prefix)
 scatter_plot(allres,5,7,"Partial Reduplication %","Triple Reduplication %","triple"+prefix)
