@@ -146,29 +146,35 @@ def print_res_list(result):
       sys.stdout.write(" "+frmt(result[i]))
   print()
   
-def scatter_plot(records,nx,ny,x_axis,y_axis,prefix):
+def scatter_plot(records,nx,ny,x_axis,y_axis,prefix,n_labels):
   xs=list()
   ys=list()
+  for rec in records:
+    xs.append(rec[nx])
+    ys.append(rec[ny])
+  min_x_lab=min_y_lab=-9999999
+  if (len(xs)>n_labels):
+    min_x_lab=sorted(xs, reverse=True)[n_labels]
+    min_y_lab=sorted(ys, reverse=True)[n_labels]
   labels=list()
   colors=list()
   markers=list()
   for rec in records:
-    if (rec[nx]+rec[ny])>0.2:
+    if (rec[nx]>=min_x_lab or rec[ny]>min_y_lab):
       fname=re.sub('.*/','',rec[0])
       labels.append(fname)
     else:
       labels.append('')
-    if ('vms/EVA' in rec[0]):
+    if ('vms/' in rec[0]):
       colors.append('#0088ff')
       markers.append('s')
     elif ('generated' in rec[0]):
-      colors.append('#55ff55')
-      markers.append('s')
+      colors.append('#33ff33')
+      markers.append('X')
     else:
       colors.append('#ff9933')
       markers.append('o')
-    xs.append(rec[nx])
-    ys.append(rec[ny])
+
   f = plt.figure()
   for i in range(0,len(xs)):
     scatter = plt.scatter(xs[i], ys[i], s=80, marker=markers[i], c=colors[i], edgecolors='w')
@@ -231,8 +237,8 @@ def do_redup_scatter(files):
     print_res_list(res)
   mylog("tot "+str([tot_couples,tot_red,tot_partial]),is_log)
   prefix=re.sub("/[^/]*$","",files[0]).replace('/','_')
-  scatter_plot(allres,3,5,"Full Reduplication %","Partial Reduplication %",prefix)
-  scatter_plot(allres,5,7,"Partial Reduplication %","Triple Reduplication %","triple"+prefix)
+  scatter_plot(allres,3,5,"Full Reduplication %","Partial Reduplication %",prefix,15)
+  scatter_plot(allres,5,7,"Partial Reduplication %","Triple Reduplication %","triple"+prefix,12)
 
 
 is_log=True

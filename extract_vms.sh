@@ -1,4 +1,11 @@
 IVTTDIR=~/rec/voynich/software/ivtt
+
+# zodiac labels marked as '_ring'
+iconv -f windows-1252 $IVTTDIR/voyn_101.txt | grep -Ev '_ring|\.label' | sed -e 's/<[^>]*>/ /g' |\
+    sed -e 's/[-=]$/ /g' | tr '.' ' '> /tmp/conv
+cat /tmp/conv | tr -d ',' > texts/vms/all/v101
+cat /tmp/conv | tr ',' ' ' > texts/vms/all/v101_u # keep uncertain spaces
+
 # a1=@nnn; for special chars, then replaced with the last digit @123;->3
 # c5=remove comments
 # h1=keep uncertain spaces; h2=ignore uncertain spaces
@@ -9,73 +16,73 @@ IVTTDIR=~/rec/voynich/software/ivtt
 # <! page header (removed)
 
 $IVTTDIR/ivtt $IVTTDIR/ZL_ivtff_1r.txt -a1 -c5 -h1 -s1 -u1 -@L -f0 +LB |\
-  grep -v '<!'|sed -e "s/[{}']//g"| sed -e 's/@[0-9][0-9]\([0-9]\);/\1/g' > texts/vms/EVA_u_B
+  grep -v '<!'|sed -e "s/[{}']//g"| sed -e 's/@[0-9][0-9]\([0-9]\);/\1/g' > texts/vms/all/EVA_u_B
    
 $IVTTDIR/ivtt $IVTTDIR/ZL_ivtff_1r.txt -a1 -c5 -h1 -s1 -u1 -@L -f0 +LA |\
-  grep -v '<!'|sed -e "s/[{}']//g"| sed -e 's/@[0-9][0-9]\([0-9]\);/\1/g' > texts/vms/EVA_u_A
+  grep -v '<!'|sed -e "s/[{}']//g"| sed -e 's/@[0-9][0-9]\([0-9]\);/\1/g' > texts/vms/all/EVA_u_A
    
 $IVTTDIR/ivtt $IVTTDIR/ZL_ivtff_1r.txt -a1 -c5 -h2 -s1 -u1 -@L -f0 +LA |\
-  grep -v '<!'|sed -e "s/[{}']//g"| sed -e 's/@[0-9][0-9]\([0-9]\);/\1/g' > texts/vms/EVA_A
+  grep -v '<!'|sed -e "s/[{}']//g"| sed -e 's/@[0-9][0-9]\([0-9]\);/\1/g' > texts/vms/all/EVA_A
    
 $IVTTDIR/ivtt $IVTTDIR/ZL_ivtff_1r.txt -a1 -c5 -h2 -s1 -u1 -@L -f0 +LB |\
-  grep -v '<!'|sed -e "s/[{}']//g"| sed -e 's/@[0-9][0-9]\([0-9]\);/\1/g' > texts/vms/EVA_B
+  grep -v '<!'|sed -e "s/[{}']//g"| sed -e 's/@[0-9][0-9]\([0-9]\);/\1/g' > texts/vms/all/EVA_B
   
 $IVTTDIR/ivtt $IVTTDIR/ZL_ivtff_1r.txt -a1 -c5 -h2 -s1 -u1 -@L -f0 |\
-  grep -Ev '<!|#'|sed -e "s/[{}']//g"| sed -e 's/@[0-9][0-9]\([0-9]\);/\1/g' > texts/vms/EVA_all
+  grep -Ev '<!|#'|sed -e "s/[{}']//g"| sed -e 's/@[0-9][0-9]\([0-9]\);/\1/g' > texts/vms/all/EVA_all
 
 # +QT Quire20
 $IVTTDIR/ivtt $IVTTDIR/ZL_ivtff_1r.txt -a1 -c5 -h2 -s1 -u1 -@L -f0 +QT |\
-  grep -Ev '<!|#'|sed -e "s/[{}']//g"| sed -e 's/@[0-9][0-9]\([0-9]\);/\1/g' > texts/vms/EVA_Q20
+  grep -Ev '<!|#'|sed -e "s/[{}']//g"| sed -e 's/@[0-9][0-9]\([0-9]\);/\1/g' > texts/vms/all/EVA_Q20
 
-rm texts/vms/scribes/S*
+rm texts/vms/all/scribes/S*
 for f in {1..24} 25 27 28 29 30 32 35 36 37 38 42 44 45 47 49 51 \
     52 53 54 56 
 do
-grep '^<f'$f'[rv]' texts/vms/EVA_all >> texts/vms/scribes/S1
+grep '^<f'$f'[rv]' texts/vms/all/EVA_all >> texts/vms/all/scribes/S1
 done    
-grep '^<f57v' texts/vms/EVA_all >> texts/vms/scribes/S1    
+grep '^<f57v' texts/vms/all/EVA_all >> texts/vms/all/scribes/S1    
 for f in {87..90} 93 96 {99..102}
 do
-grep '^<f'$f'[rv]' texts/vms/EVA_all >> texts/vms/scribes/S1
+grep '^<f'$f'[rv]' texts/vms/all/EVA_all >> texts/vms/all/scribes/S1
 done
 
 # 85 86 other side of Rosettes
 for f in 26 31 33 34 39 40 43 46 50 55 {75..84} 85 86
 do
-grep '^<f'$f'[rv]' texts/vms/EVA_all >> texts/vms/scribes/S2
+grep '^<f'$f'[rv]' texts/vms/all/EVA_all >> texts/vms/all/scribes/S2
 done
 # first 12 lines of f115r
 for i in {1..12}
 do
-grep '^<f115r\.'$i',' texts/vms/EVA_all >> texts/vms/scribes/S2
+grep '^<f115r\.'$i',' texts/vms/all/EVA_all >> texts/vms/all/scribes/S2
 done
 
 for f in 58 65 94 95
 do
-grep '^<f'$f'[rv]' texts/vms/EVA_all >> texts/vms/scribes/S3
+grep '^<f'$f'[rv]' texts/vms/all/EVA_all >> texts/vms/all/scribes/S3
 done
 
 for f in {103..114}
 do
-grep '^<f'$f'[rv]' texts/vms/EVA_all >> texts/vms/scribes/S3
+grep '^<f'$f'[rv]' texts/vms/all/EVA_all >> texts/vms/all/scribes/S3
 done
 # from line 13 of f115r
 for i in {13..45}
 do
-grep '^<f115r\.'$i',' texts/vms/EVA_all >> texts/vms/scribes/S3
+grep '^<f115r\.'$i',' texts/vms/all/EVA_all >> texts/vms/all/scribes/S3
 done
-grep '^<f115v' texts/vms/EVA_all >> texts/vms/scribes/S3
-grep '^<f116r' texts/vms/EVA_all >> texts/vms/scribes/S3
+grep '^<f115v' texts/vms/all/EVA_all >> texts/vms/all/scribes/S3
+grep '^<f116r' texts/vms/all/EVA_all >> texts/vms/all/scribes/S3
 
 for f in 67 68 69 70 71 72 73
 do
-grep '^<f'$f'[rv]' texts/vms/EVA_all >> texts/vms/scribes/S4
+grep '^<f'$f'[rv]' texts/vms/all/EVA_all >> texts/vms/all/scribes/S4
 done
-grep '^<fRos' texts/vms/EVA_all >> texts/vms/scribes/S4
+grep '^<fRos' texts/vms/all/EVA_all >> texts/vms/all/scribes/S4
 
 for f in 41r 41v 48r 48v 57r 66r 66v
 do
-grep '^<f'$f texts/vms/EVA_all >> texts/vms/scribes/S5
+grep '^<f'$f texts/vms/all/EVA_all >> texts/vms/all/scribes/S5
 done
 
 
@@ -83,6 +90,6 @@ for text_type in Circular Label Paragraph Radial
 do
 lett=`echo $text_type | grep -o '^.' `
 $IVTTDIR/ivtt $IVTTDIR/ZL_ivtff_1r.txt -a1 -c5 -h2 -s1 -u1 +@$lett -f0 |\
-  grep -Ev '<!|#'|sed -e "s/[{}']//g"| sed -e 's/@[0-9][0-9]\([0-9]\);/\1/g' > texts/vms/text_type/$text_type
+  grep -Ev '<!|#'|sed -e "s/[{}']//g"| sed -e 's/@[0-9][0-9]\([0-9]\);/\1/g' > texts/vms/all/text_type/$text_type
 done
 
