@@ -4,6 +4,7 @@ import Levenshtein
 import random
 import string
 import time
+import numpy as np
 from datetime import datetime
 from matplotlib import pyplot as plt
 from adjustText import adjust_text
@@ -29,7 +30,7 @@ def count_redup(words,islog):
 	partial_words=list()
 	for i in range(0,len(words)-1):
 	  dist=Levenshtein.distance(words[i],words[i+1])
-	  if dist==0  and len(words[i])>1: # ignore single char reduplication (see TXB)
+	  if dist==0  :#and len(words[i])>1: # ignore single char reduplication (see TXB)
 	    n_redup+=1
 	    redup_words.append(words[i+1])
 	    if not(previous_red):
@@ -76,11 +77,14 @@ def read_words(infile):
     if text.startswith('<f'):  # ivtt VMS file
       text=re.sub('<[^>]*>',' ',text)
     with_spaces=' '+text.replace('\n', ' ').replace('\r', ' ')
+    # TXB contains strings like "(yoka)l(l)e"
+    with_spaces=re.sub('[()]','',with_spaces)
     translator = with_spaces.maketrans(string.punctuation, ' '*len(string.punctuation))
     # replace punctuation with spaces
     with_spaces=with_spaces.translate(translator)
     # '–' '·' '•' occur repeatedly in TXB and are not in string.punctuation
-    with_spaces=re.sub('[•–·]',' ',with_spaces)
+    # '–' '·' apparently represent sounds or maybe unreadable characters?
+    with_spaces=re.sub('[•–]',' ',with_spaces)
 
   lowercase_string=with_spaces.lower()
   mylog( "len_decoded: "+str(len(lowercase_string)),is_log)
@@ -200,8 +204,11 @@ def get_time_str():
 
 def do_redup_by_rank(files):
   f = plt.figure()
+  plt.ylim(-1,20)
+  plt.xticks(np.arange(1, 21, step=1))
   nline=0
   styles=('ro-','bs-','go-')
+  texts = []
   for f in files:
     words=read_words(f)
     cnt=Counter(words)
@@ -210,17 +217,27 @@ def do_redup_by_rank(files):
     redcnt=Counter(red_words)
     xs=list()
     ys=list()
+    labels=list()
     i=1
     for w,n in cnt.most_common(20):
       mylog(w+" "+str(cnt[w])+" "+str(redcnt[w])+" "+frmt(100.0*redcnt[w]/cnt[w]),is_log)
       xs.append(i)
       ys.append(100.0*redcnt[w]/cnt[w])
+      labels.append(w)
       i=i+1
+    for x, y, l in zip(xs, ys, labels):
+      texts.append(plt.text(x, y, l))
     print(styles)
     print(styles[0])
-    plt.plot(xs, ys, styles[nline])
+    plt.plot(xs, ys, styles[nline],alpha=0.5)
     nline+=1
-  plt.savefig('out/lines_'+get_time_str()+'.png')
+  plt.xlabel(files[0])
+  plt.ylabel("Full Reduplication %")
+  fname=re.sub("/","_",files[0]).replace('texts_','')
+  adjust_text(texts, force_points=0.2, force_text=0.2,
+            expand_points=(1, 1), expand_text=(1, 1),
+            arrowprops=dict(arrowstyle="-", color='#444477', lw=0.5))
+  plt.savefig('out/rank_'+fname+'_'+get_time_str()+'.png')
 
 def do_redup_scatter(files):
   print( "_data_ couples red %red partial %partial triple %triple scr.red scr.%r scr.partial scr.%partial scr.triple scr.%triple")
