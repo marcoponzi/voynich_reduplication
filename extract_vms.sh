@@ -15,24 +15,30 @@ cat /tmp/conv | tr ',' ' ' > texts/vms/all/v101_u # keep uncertain spaces
 # f0=keep foliation information
 # <! page header (removed)
 
-$IVTTDIR/ivtt $IVTTDIR/ZL_ivtff_1r.txt -a1 -c5 -h1 -s1 -u1 -@L -f0 +LB |\
-  grep -v '<!'|sed -e "s/[{}']//g"| sed -e 's/@[0-9][0-9]\([0-9]\);/\1/g' > texts/vms/all/EVA_u_B
    
-$IVTTDIR/ivtt $IVTTDIR/ZL_ivtff_1r.txt -a1 -c5 -h1 -s1 -u1 -@L -f0 +LA |\
-  grep -v '<!'|sed -e "s/[{}']//g"| sed -e 's/@[0-9][0-9]\([0-9]\);/\1/g' > texts/vms/all/EVA_u_A
+$IVTTDIR/ivtt $IVTTDIR/ZL_ivtff_1r.txt -a1 -c5 -h1 -s1 -u1 -@L -f0 +LA > texts/vms/all/EVA_u_A
+
+$IVTTDIR/ivtt $IVTTDIR/ZL_ivtff_1r.txt -a1 -c5 -h1 -s1 -u1 -@L -f0 +LB > texts/vms/all/EVA_u_B
    
-$IVTTDIR/ivtt $IVTTDIR/ZL_ivtff_1r.txt -a1 -c5 -h2 -s1 -u1 -@L -f0 +LA |\
-  grep -v '<!'|sed -e "s/[{}']//g"| sed -e 's/@[0-9][0-9]\([0-9]\);/\1/g' > texts/vms/all/EVA_A
+$IVTTDIR/ivtt $IVTTDIR/ZL_ivtff_1r.txt -a1 -c5 -h2 -s1 -u1 -@L -f0 +LA > texts/vms/all/EVA_A
    
-$IVTTDIR/ivtt $IVTTDIR/ZL_ivtff_1r.txt -a1 -c5 -h2 -s1 -u1 -@L -f0 +LB |\
-  grep -v '<!'|sed -e "s/[{}']//g"| sed -e 's/@[0-9][0-9]\([0-9]\);/\1/g' > texts/vms/all/EVA_B
+$IVTTDIR/ivtt $IVTTDIR/ZL_ivtff_1r.txt -a1 -c5 -h2 -s1 -u1 -@L -f0 +LB > texts/vms/all/EVA_B
   
-$IVTTDIR/ivtt $IVTTDIR/ZL_ivtff_1r.txt -a1 -c5 -h2 -s1 -u1 -@L -f0 |\
-  grep -Ev '<!|#'|sed -e "s/[{}']//g"| sed -e 's/@[0-9][0-9]\([0-9]\);/\1/g' > texts/vms/all/EVA_all
+$IVTTDIR/ivtt $IVTTDIR/ZL_ivtff_1r.txt -a1 -c5 -h2 -s1 -u1 -@L -f0 > texts/vms/all/EVA_all
+
+
+# SECTION (IGNORING UNCERTAIN SPACES)
+# +QT Quire13 / Bio
+$IVTTDIR/ivtt $IVTTDIR/ZL_ivtff_1r.txt -a1 -c5 -h2 -s1 -u1 -@L -f0 +QM > texts/vms/sections/EVA_Q13
 
 # +QT Quire20
-$IVTTDIR/ivtt $IVTTDIR/ZL_ivtff_1r.txt -a1 -c5 -h2 -s1 -u1 -@L -f0 +QT |\
-  grep -Ev '<!|#'|sed -e "s/[{}']//g"| sed -e 's/@[0-9][0-9]\([0-9]\);/\1/g' > texts/vms/all/EVA_Q20
+$IVTTDIR/ivtt $IVTTDIR/ZL_ivtff_1r.txt -a1 -c5 -h2 -s1 -u1 -@L -f0 +QT > texts/vms/sections/EVA_Q20
+  
+for f in texts/vms/all/* texts/vms/sections/*
+do
+  grep -Ev '<!|#' $f |sed -e "s/[{}']//g" | sed -e 's/@[0-9][0-9]\([0-9]\);/\1/g' > /tmp/out
+  mv /tmp/out $f
+done
 
 rm texts/vms/all/scribes/S*
 for f in {1..24} 25 27 28 29 30 32 35 36 37 38 42 44 45 47 49 51 \
