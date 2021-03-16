@@ -74,28 +74,29 @@ def read_words(infile):
   with_spaces=''
   with open(infile, 'r') as myfile:
     text=myfile.read()
-    if text.startswith('<f'):  # ivtt VMS file
+    if 'vms/' in infile:  # ivtt VMS file
       text=re.sub('<[^>]*>',' ',text)
-    with_spaces=' '+text.replace('\n', ' ').replace('\r', ' ')
+    else:
+      text=text.lower() # v101 is case sensitive
+    clean_string=' '+text.replace('\n', ' ').replace('\r', ' ')
     # TXB contains strings like "(yoka)l(l)e"
-    with_spaces=re.sub('[()]','',with_spaces)
-    translator = with_spaces.maketrans(string.punctuation, ' '*len(string.punctuation))
+    clean_string=re.sub('[()]','',clean_string)
+    translator = clean_string.maketrans(string.punctuation, ' '*len(string.punctuation))
     # replace punctuation with spaces
-    with_spaces=with_spaces.translate(translator)
+    clean_string=clean_string.translate(translator)
     # '–' '·' '•' occur repeatedly in TXB and are not in string.punctuation
     # '–' '·' apparently represent sounds or maybe unreadable characters?
-    with_spaces=re.sub('[•–]',' ',with_spaces)
+    clean_string=re.sub('[•–]',' ',clean_string)
 
-  lowercase_string=with_spaces.lower()
-  mylog( "len_decoded: "+str(len(lowercase_string)),is_log)
-  mylog(with_spaces[:200],is_log)
+  mylog( "len_decoded: "+str(len(clean_string)),is_log)
+  mylog(clean_string[:200],is_log)
 
   msg=""
   for i in range(0,10):
-    msg+= str(i)+":"+lowercase_string[i]+"  "
+    msg+= str(i)+":"+clean_string[i]+"  "
   mylog(msg,is_log)
 
-  temp=lowercase_string.split(' ')
+  temp=clean_string.split(' ')
   words=list()
   for w in temp:
     if (len(w)>0):
@@ -205,21 +206,22 @@ def get_time_str():
 def do_redup_by_rank(files):
   f = plt.figure()
   plt.ylim(-1,20)
-  plt.xticks(np.arange(1, 21, step=1))
+  N_WORDS=30
+  plt.xticks(np.arange(1, N_WORDS+1, step=2))
   nline=0
   styles=('ro-','bs-','go-')
   texts = []
   for f in files:
     words=read_words(f)
     cnt=Counter(words)
-    print(cnt.most_common(10))
+    print(cnt.most_common(N_WORDS))
     n_redup,n_partial,n_triple,red_words,part_words=count_redup(words,is_log)
     redcnt=Counter(red_words)
     xs=list()
     ys=list()
     labels=list()
     i=1
-    for w,n in cnt.most_common(20):
+    for w,n in cnt.most_common(N_WORDS):
       mylog(w+" "+str(cnt[w])+" "+str(redcnt[w])+" "+frmt(100.0*redcnt[w]/cnt[w]),is_log)
       xs.append(i)
       ys.append(100.0*redcnt[w]/cnt[w])
