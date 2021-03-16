@@ -7,6 +7,9 @@ Voynich transliteration by Zandbergen and Landini
 v101 transliteration:
   http://www.voynich.nu/data/voyn_101.txt
 
+Donald Fisk's generated text:
+  https://www.fmjlang.co.uk/voynich/generated-voynich-manuscript.txt
+
 ```
 Needed packages:
 pip3 install adjustText
@@ -31,7 +34,15 @@ Triple reduplication:
 python3 redup_stats.py redup_scatter `ls -1 texts/brian_cham_utf8/*|grep -v PML` \
   texts/vms/all/* texts/generated/clean/df texts/generated/clean/ts
 
+for f in texts/vms/all/EVA_all texts/vms/all/v101 texts/vms/all/EVA_Q20 texts/generated/clean/ts texts/generated/clean/df \
+     texts/brian_cham_utf8/LZH texts/brian_cham_utf8/VIE texts/brian_cham_utf8/JPN 
+do 
+  python3 redup_stats.py redup_by_rank $f
+done
+
+
 ```
 
 TODO:
 logging of weird characetrs (e.g. CZE LIT)
+handling high ascii values in ZL
