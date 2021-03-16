@@ -46,3 +46,5 @@ done
 TODO:
 logging of weird characetrs (e.g. CZE LIT)
 handling high ascii values in ZL
+split DF by sections (at least Q20)
+GC ivtt as a source for v101
