@@ -29,35 +29,56 @@ $IVTTDIR/ivtt $IVTTDIR/ZL_ivtff_1r.txt -a1 -c5 -h2 -s1 -u1 -@L -f0 > texts/vms/a
 
 # SECTION (IGNORING UNCERTAIN SPACES)
 
+# Dummy
+echo "" > texts/vms/sections/Unknown
+
 # QA PA f1r; QH PC/D f58r/v
 $IVTTDIR/ivtt $IVTTDIR/ZL_ivtff_1r.txt -a1 -c5 -h2 -s1 -u1 -@L -f0 +QA +PA +LA > texts/vms/sections/EVA_HerbA
 $IVTTDIR/ivtt $IVTTDIR/ZL_ivtff_1r.txt -a1 -c5 -h2 -s1 -u1 -@L -f0 +QH +PC +LA >> texts/vms/sections/EVA_HerbA
 $IVTTDIR/ivtt $IVTTDIR/ZL_ivtff_1r.txt -a1 -c5 -h2 -s1 -u1 -@L -f0 +QH +PD +LA >> texts/vms/sections/EVA_HerbA
 $IVTTDIR/ivtt $IVTTDIR/ZL_ivtff_1r.txt -a1 -c5 -h2 -s1 -u1 -@L -f0 +IH +LA >> texts/vms/sections/EVA_HerbA
+# Unclassifiable pages as separate section
+$IVTTDIR/ivtt $IVTTDIR/ZL_ivtff_1r.txt -a1 -c5 -h2 -s1 -u1 -@L -f0 +QA +PA +LA > texts/vms/sections_unk/Unknown
+$IVTTDIR/ivtt $IVTTDIR/ZL_ivtff_1r.txt -a1 -c5 -h2 -s1 -u1 -@L -f0 +QH +PC +LA >> texts/vms/sections_unk/Unknown
+$IVTTDIR/ivtt $IVTTDIR/ZL_ivtff_1r.txt -a1 -c5 -h2 -s1 -u1 -@L -f0 +QH +PD +LA >> texts/vms/sections_unk/Unknown
+$IVTTDIR/ivtt $IVTTDIR/ZL_ivtff_1r.txt -a1 -c5 -h2 -s1 -u1 -@L -f0 +IH +LA > texts/vms/sections_unk/EVA_HerbA
 
 $IVTTDIR/ivtt $IVTTDIR/ZL_ivtff_1r.txt -a1 -c5 -h2 -s1 -u1 -@L -f0 +IP > texts/vms/sections/EVA_Pharma
+$IVTTDIR/ivtt $IVTTDIR/ZL_ivtff_1r.txt -a1 -c5 -h2 -s1 -u1 -@L -f0 +IP > texts/vms/sections_unk/EVA_Pharma
 
 $IVTTDIR/ivtt $IVTTDIR/ZL_ivtff_1r.txt -a1 -c5 -h2 -s1 -u1 -@L -f0 +IH +LB > texts/vms/sections/EVA_HerbB
+$IVTTDIR/ivtt $IVTTDIR/ZL_ivtff_1r.txt -a1 -c5 -h2 -s1 -u1 -@L -f0 +IH +LB > texts/vms/sections_unk/EVA_HerbB
 
 # QH PE/F f65r/v belong to language B, see https://www.voynich.ninja/thread-3192-post-37291.html#pid37291
 $IVTTDIR/ivtt $IVTTDIR/ZL_ivtff_1r.txt -a1 -c5 -h2 -s1 -u1 -@L -f0 +QH +PE >> texts/vms/sections/EVA_HerbB
 $IVTTDIR/ivtt $IVTTDIR/ZL_ivtff_1r.txt -a1 -c5 -h2 -s1 -u1 -@L -f0 +QH +PF >> texts/vms/sections/EVA_HerbB
 # f66r
 $IVTTDIR/ivtt $IVTTDIR/ZL_ivtff_1r.txt -a1 -c5 -h2 -s1 -u1 -@L -f0 +QH +PG >> texts/vms/sections/EVA_HerbB
+# Unclassifiable pages as separate section
+$IVTTDIR/ivtt $IVTTDIR/ZL_ivtff_1r.txt -a1 -c5 -h2 -s1 -u1 -@L -f0 +QH +PE >> texts/vms/sections_unk/Unknown
+$IVTTDIR/ivtt $IVTTDIR/ZL_ivtff_1r.txt -a1 -c5 -h2 -s1 -u1 -@L -f0 +QH +PF >> texts/vms/sections_unk/Unknown
+$IVTTDIR/ivtt $IVTTDIR/ZL_ivtff_1r.txt -a1 -c5 -h2 -s1 -u1 -@L -f0 +QH +PG >> texts/vms/sections_unk/Unknown
 
 $IVTTDIR/ivtt $IVTTDIR/ZL_ivtff_1r.txt -a1 -c5 -h2 -s1 -u1 -@L -f0 +IA > texts/vms/sections/EVA_AstroCZ
 $IVTTDIR/ivtt $IVTTDIR/ZL_ivtff_1r.txt -a1 -c5 -h2 -s1 -u1 -@L -f0 +IC >> texts/vms/sections/EVA_AstroCZ
 $IVTTDIR/ivtt $IVTTDIR/ZL_ivtff_1r.txt -a1 -c5 -h2 -s1 -u1 -@L -f0 +IZ >> texts/vms/sections/EVA_AstroCZ
+$IVTTDIR/ivtt $IVTTDIR/ZL_ivtff_1r.txt -a1 -c5 -h2 -s1 -u1 -@L -f0 +IA > texts/vms/sections_unk/EVA_AstroCZ
+$IVTTDIR/ivtt $IVTTDIR/ZL_ivtff_1r.txt -a1 -c5 -h2 -s1 -u1 -@L -f0 +IC >> texts/vms/sections_unk/EVA_AstroCZ
+$IVTTDIR/ivtt $IVTTDIR/ZL_ivtff_1r.txt -a1 -c5 -h2 -s1 -u1 -@L -f0 +IZ >> texts/vms/sections_unk/EVA_AstroCZ
 # f85r1 Text page on the same sheet as Cosmo diagrams
 $IVTTDIR/ivtt $IVTTDIR/ZL_ivtff_1r.txt -a1 -c5 -h2 -s1 -u1 -@L -f0 +QN +PB >> texts/vms/sections/EVA_AstroCZ
+# Unclassifiable pages as separate section
+$IVTTDIR/ivtt $IVTTDIR/ZL_ivtff_1r.txt -a1 -c5 -h2 -s1 -u1 -@L -f0 +QN +PB >> texts/vms/sections_unk/Unknown
 
 # +QT Quire13 / Bio
 $IVTTDIR/ivtt $IVTTDIR/ZL_ivtff_1r.txt -a1 -c5 -h2 -s1 -u1 -@L -f0 +QM > texts/vms/sections/EVA_Q13
+$IVTTDIR/ivtt $IVTTDIR/ZL_ivtff_1r.txt -a1 -c5 -h2 -s1 -u1 -@L -f0 +QM > texts/vms/sections_unk/EVA_Q13
 
 # +QT Quire20
 $IVTTDIR/ivtt $IVTTDIR/ZL_ivtff_1r.txt -a1 -c5 -h2 -s1 -u1 -@L -f0 +QT > texts/vms/sections/EVA_Q20
+$IVTTDIR/ivtt $IVTTDIR/ZL_ivtff_1r.txt -a1 -c5 -h2 -s1 -u1 -@L -f0 +QT > texts/vms/sections_unk/EVA_Q20
   
-for f in texts/vms/all/* texts/vms/sections/*
+for f in texts/vms/all/* texts/vms/sections/* texts/vms/sections_unk/*
 do
   grep -Ev '<!|#' $f |sed -e "s/[{}']//g" | sed -e 's/@[0-9][0-9]\([0-9]\);/\1/g' > /tmp/out
   mv /tmp/out $f
