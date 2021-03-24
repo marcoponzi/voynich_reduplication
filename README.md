@@ -46,7 +46,5 @@ done
 TODO:
 logging of weird characetrs (e.g. CZE LIT)
 handling high ascii values in ZL
-DF generated-voynich-manuscript.txt instead of html
-split DF by sections (at least Q20)
 GC ivtt as a source for v101
-scrambled plots and parametric number of scramble iterations
+scrambled plots 

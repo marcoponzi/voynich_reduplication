@@ -113,28 +113,25 @@ def read_words(infile):
   return words
 
 
-def proc_file(infile):
+def proc_file(infile, N_SCR):
   words=read_words(infile)
   n_redup,n_partial,n_triple,red_words,part_words=count_redup(words,is_log)
   mylog( "ORIG "+infile+" "+str(n_redup)+" "+frmt(100.0*n_redup/float(len(words)-1))+\
      " "+str(n_partial)+" "+frmt(100.0*n_partial/float(len(words)-1))+\
      " "+str(n_triple)+" "+frmt(100.0*n_triple/float(len(words)-2)),is_log)
 
-  #N_SCR=20
-  N_SCR=3
-  tot_red=0
-  tot_partial=0
-  tot_triple=0
+  tot_red_s=tot_partial_s=tot_triple_s=n_redup_s=n_partial_s=n_triple_s=0
   for i in range(0,N_SCR):
     scrambled=scramble(words)
     n_redup_s,n_partial_s,n_triple_s,red_words,part_words=count_redup(words, False)
-    tot_red+=n_redup_s
-    tot_partial+=n_partial_s
-    tot_triple+=n_triple_s
+    tot_red_s+=n_redup_s
+    tot_partial_s+=n_partial_s
+    tot_triple_s+=n_triple_s
     mylog( "scrambled: "+str(n_redup_s)+" "+str(n_partial_s),is_log)
   
-  n_redup_s=float(tot_red)/N_SCR
-  n_partial_s=float(tot_partial)/N_SCR
+  n_redup_s=float(tot_red_s)/max(1,N_SCR)
+  n_partial_s=float(tot_partial_s)/max(1,N_SCR)
+  n_triple_s=float(tot_triple_s)/max(1,N_SCR)
   return [infile, (len(words)-1), (n_redup), (100.0*n_redup/float(len(words)-1)), \
    (n_partial), (100.0*n_partial/float(len(words)-1)), \
    (n_triple), (100.0*n_triple/float(len(words)-2)), \
@@ -248,7 +245,7 @@ def do_redup_scatter(files):
   tot_partial=0
   allres=list()
   for f in files:
-    res=proc_file(f)
+    res=proc_file(f,0)
     tot_couples+=res[1]
     tot_red+=res[2]
     tot_partial+=res[4]
