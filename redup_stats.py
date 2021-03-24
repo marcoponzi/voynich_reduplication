@@ -127,7 +127,7 @@ def proc_file(infile, N_SCR):
     tot_red_s+=n_redup_s
     tot_partial_s+=n_partial_s
     tot_triple_s+=n_triple_s
-    mylog( "scrambled: "+str(n_redup_s)+" "+str(n_partial_s),is_log)
+    mylog( "scrambled: "+str(n_redup_s)+" "+str(n_partial_s)+" "+str(n_triple_s),is_log)
   
   n_redup_s=float(tot_red_s)/max(1,N_SCR)
   n_partial_s=float(tot_partial_s)/max(1,N_SCR)
@@ -256,12 +256,40 @@ def do_redup_scatter(files):
   scatter_plot(allres,3,5,"Full Reduplication %","Partial Reduplication %",prefix,15)
   scatter_plot(allres,5,7,"Partial Reduplication %","Triple Reduplication %","triple"+prefix,12)
 
+def do_scramble(files):
+  allres=list()
+  for f in files:
+    res=proc_file(f,20)
+    allres.append(res)
+  ratios=list()
+  error=""
+  for res in allres:
+    mylog("RES "+str(res),is_log)
+    red=0
+    if (res[3]>0):
+      red=res[3]/res[9]
+    part=0
+    if (res[5]>0):
+      part=res[5]/res[11]
+    triple=0
+    if (res[7]>0):
+      if (res[13]>0):
+        triple=res[7]/res[13] 
+      else: # Division by 0
+        mylog("*** ZERO SCR TRIPLE "+str(res),is_log)
+        error+="ERROR "+str(res)+"\n"
+    ratios.append((res[0],red,part,triple))
+  scatter_plot(ratios,1,2,"Full Reduplication Actual/Scrambled","Partial Reduplication Actual/Scrambled","scr_",20)
+  scatter_plot(ratios,1,3,"Full Reduplication Actual/Scrambled","Triple Reduplication Actual/Scrambled","scr3_",20)
+  print("CHECK: "+error)
 
 is_log=True
 if sys.argv[1]=='redup_scatter':
   do_redup_scatter(sys.argv[2:])
 elif sys.argv[1]=='redup_by_rank':
   do_redup_by_rank(sys.argv[2:])
+elif sys.argv[1]=='scramble':
+  do_scramble(sys.argv[2:])
 else:
   print("arg1: redup_scatter redup_by_rank")
 

@@ -33,6 +33,14 @@ Triple reduplication:
 
 python3 redup_stats.py redup_scatter `ls -1 texts/brian_cham_utf8/*|grep -v PML` \
   texts/vms/all/* texts/generated/clean/df texts/generated/clean/ts
+  
+Scrambled:
+
+python3 redup_stats.py scramble texts/brian_cham_utf8/* texts/vms/all/* texts/generated/clean/*
+
+Removing outliers:
+
+python3 redup_stats.py scramble `ls -1 texts/brian_cham_utf8/* texts/vms/all/* texts/generated/clean/* | grep -Ev 'PML|EMY|rz'`
 
 for f in texts/vms/all/EVA_all texts/vms/all/v101 texts/vms/all/EVA_Q20 texts/generated/clean/ts texts/generated/clean/df \
      texts/brian_cham_utf8/LZH texts/brian_cham_utf8/VIE texts/brian_cham_utf8/JPN 
@@ -47,4 +55,3 @@ TODO:
 logging of weird characetrs (e.g. CZE LIT)
 handling high ascii values in ZL
 GC ivtt as a source for v101
-scrambled plots 
