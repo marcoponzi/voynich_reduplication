@@ -1,6 +1,6 @@
-cat texts/generated/donald_fisk/generated-voynich-manuscript.html | head -4602 | tail -4569 |\
- grep -v '[A-Z]' | sed -e 's/<[^>]*>/ /g' > texts/generated/clean/df
- 
+cat texts/generated/donald_fisk/generated-voynich-manuscript.txt | grep -v '[A-Z]'> texts/generated/clean/df
+
+cat texts/generated/donald_fisk/generated-voynich-manuscript.txt | sed -e '1,2703d'> texts/generated/clean/df_text_q20
  
 grep -v '^#' texts/generated/timm_and_schinner/generated_text.txt > texts/generated/clean/ts
 
