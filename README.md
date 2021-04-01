@@ -53,5 +53,4 @@ done
 
 TODO:
 logging of weird characetrs (e.g. CZE LIT)
-handling high ascii values in ZL
 GC ivtt as a source for v101

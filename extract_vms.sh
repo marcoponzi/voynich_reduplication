@@ -89,7 +89,7 @@ done
 for f in texts/vms/all/* texts/vms/sections/* texts/vms/sections_unk/* texts/vms/text_type/*
 do
   # convert high ascii bytes to printable characters
-  iconv -f ISO-8859-1 -t utf-8 $f > /tmp/conv
+  iconv -f Windows-1252 -t utf-8 $f > /tmp/conv
   # remove comments and ligature wrappings
   grep -Ev '<!|#' /tmp/conv |sed -e "s/[{}']//g" > /tmp/out
   mv /tmp/out $f
