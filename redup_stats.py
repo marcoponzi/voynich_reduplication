@@ -77,6 +77,7 @@ def read_words(infile):
     if 'vms/' in infile:  # ivtt VMS file
       # preserve punctuation in vms
       # (some punctuation may represent high ascii codes used for rare characters)
+      # remove line headers, paragraph markers etc.
       text=re.sub('<[^>]*>',' ',text)
       clean_string=text
     else:
@@ -259,8 +260,8 @@ def do_redup_scatter(files):
     print_res_list(res)
   mylog("tot "+str([tot_couples,tot_red,tot_partial]),is_log)
   prefix=re.sub("/[^/]*$","",files[0]).replace('/','_')
-  scatter_plot(allres,3,5,"Full Reduplication %","Partial Reduplication %",prefix,15)
-  scatter_plot(allres,5,7,"Partial Reduplication %","Triple Reduplication %","triple"+prefix,12)
+  scatter_plot(allres,3,5,"Full Reduplication %","Partial Reduplication %",prefix,18)
+  scatter_plot(allres,5,7,"Partial Reduplication %","Triple Reduplication %","triple"+prefix,15)
 
 def do_scramble(files):
   allres=list()

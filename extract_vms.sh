@@ -1,10 +1,14 @@
 IVTTDIR=~/rec/voynich/software/ivtt
 
 # zodiac labels marked as '_ring'
-iconv -f windows-1252 $IVTTDIR/voyn_101.txt | grep -Ev '_ring|\.label' | sed -e 's/<[^>]*>/ /g' |\
+iconv -f Windows-1252 -t utf-8 $IVTTDIR/voyn_101.txt | grep -Ev '_ring|\.label' | sed -e 's/<[^>]*>/ /g' |\
     sed -e 's/[-=]$/ /g' | tr '.' ' '> /tmp/conv
 cat /tmp/conv | tr -d ',' > texts/vms/all/v101
 cat /tmp/conv | tr ',' ' ' > texts/vms/all/v101_u # keep uncertain spaces
+
+$IVTTDIR/ivtt $IVTTDIR/GC_ivtff_0c.txt -a2 -c5 -h1 -s1 -u1 -@L -f0 > texts/vms/all/v101_u
+$IVTTDIR/ivtt $IVTTDIR/GC_ivtff_0c.txt -a2 -c5 -h2 -s1 -u1 -@L -f0 > texts/vms/all/v101
+
 
 # a2=Convert @nnn; codes (rare characters) to a single high ascii byte 
 # c5=remove comments
@@ -23,7 +27,8 @@ $IVTTDIR/ivtt $IVTTDIR/ZL_ivtff_1r.txt -a2 -c5 -h1 -s1 -u1 -@L -f0 +LB > texts/v
 $IVTTDIR/ivtt $IVTTDIR/ZL_ivtff_1r.txt -a2 -c5 -h2 -s1 -u1 -@L -f0 +LA > texts/vms/all/EVA_A
    
 $IVTTDIR/ivtt $IVTTDIR/ZL_ivtff_1r.txt -a2 -c5 -h2 -s1 -u1 -@L -f0 +LB > texts/vms/all/EVA_B
-  
+
+$IVTTDIR/ivtt $IVTTDIR/ZL_ivtff_1r.txt -a2 -c5 -h1 -s1 -u1 -@L -f0 > texts/vms/all/EVA_all_u  
 $IVTTDIR/ivtt $IVTTDIR/ZL_ivtff_1r.txt -a2 -c5 -h2 -s1 -u1 -@L -f0 > texts/vms/all/EVA_all
 
 
