@@ -88,7 +88,9 @@ def read_words(infile):
       clean_string=clean_string.translate(translator)
       # '–' '·' '•' occur repeatedly in TXB and are not in string.punctuation
       # '–' '·' apparently represent sounds or maybe unreadable characters?
-      clean_string=re.sub('[•–]',' ',clean_string)
+      # some characters appearing in LZH
+      clean_string=re.sub('[•– —。；“”、：，]',' ',clean_string)
+      
     clean_string=' '+clean_string.replace('\n', ' ').replace('\r', ' ')
 
 

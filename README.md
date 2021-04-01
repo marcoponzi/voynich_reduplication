@@ -52,5 +52,4 @@ done
 ```
 
 TODO:
-logging of weird characetrs (e.g. CZE LIT)
 GC ivtt as a source for v101

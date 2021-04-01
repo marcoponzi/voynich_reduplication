@@ -10,7 +10,9 @@ do
   if [ $RESULT -eq 0 ]; then
     echo success
   else
-    iconv -f ISO-8859-1 "$f" > /tmp/conv
+    # Windows-1252 aka ANSI
+    # see https://www.w3schools.com/html/html_charset.asp
+    iconv -f Windows-1252 -t UTF-8 "$f" > /tmp/conv
   fi
   cp /tmp/conv texts/brian_cham_utf8/$fname
 done
