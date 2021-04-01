@@ -19,3 +19,7 @@ done
 
 sed -e 's/‹/ï/g' texts/brian_cham_utf8/ITA > /tmp/out
 mv /tmp/out texts/brian_cham_utf8/ITA
+
+# remove line numbers from Sanskrit file
+sed -e 's/^.\..\...\?.\? / /' texts/brian_cham_utf8/SAN > /tmp/out
+mv /tmp/out texts/brian_cham_utf8/SAN
