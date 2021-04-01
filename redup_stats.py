@@ -75,18 +75,22 @@ def read_words(infile):
   with open(infile, 'r') as myfile:
     text=myfile.read()
     if 'vms/' in infile:  # ivtt VMS file
+      # preserve punctuation in vms
+      # (some punctuation may represent high ascii codes used for rare characters)
       text=re.sub('<[^>]*>',' ',text)
+      clean_string=text
     else:
       text=text.lower() # v101 is case sensitive
-    clean_string=' '+text.replace('\n', ' ').replace('\r', ' ')
-    # TXB contains strings like "(yoka)l(l)e"
-    clean_string=re.sub('[()]','',clean_string)
-    translator = clean_string.maketrans(string.punctuation, ' '*len(string.punctuation))
-    # replace punctuation with spaces
-    clean_string=clean_string.translate(translator)
-    # '–' '·' '•' occur repeatedly in TXB and are not in string.punctuation
-    # '–' '·' apparently represent sounds or maybe unreadable characters?
-    clean_string=re.sub('[•–]',' ',clean_string)
+      # TXB contains strings like "(yoka)l(l)e"
+      clean_string=re.sub('[()]','',text)
+      translator = clean_string.maketrans(string.punctuation, ' '*len(string.punctuation))
+      # replace punctuation with spaces
+      clean_string=clean_string.translate(translator)
+      # '–' '·' '•' occur repeatedly in TXB and are not in string.punctuation
+      # '–' '·' apparently represent sounds or maybe unreadable characters?
+      clean_string=re.sub('[•–]',' ',clean_string)
+    clean_string=' '+clean_string.replace('\n', ' ').replace('\r', ' ')
+
 
   mylog( "len_decoded: "+str(len(clean_string)),is_log)
   mylog(clean_string[:200],is_log)
@@ -291,5 +295,5 @@ elif sys.argv[1]=='redup_by_rank':
 elif sys.argv[1]=='scramble':
   do_scramble(sys.argv[2:])
 else:
-  print("arg1: redup_scatter redup_by_rank")
+  print("arg1: redup_scatter redup_by_rank scramble")
 
