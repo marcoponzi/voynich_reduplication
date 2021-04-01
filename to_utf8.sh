@@ -16,3 +16,6 @@ do
   fi
   cp /tmp/conv texts/brian_cham_utf8/$fname
 done
+
+sed -e 's/‹/ï/g' texts/brian_cham_utf8/ITA > /tmp/out
+mv /tmp/out texts/brian_cham_utf8/ITA
