@@ -52,4 +52,5 @@ done
 ```
 
 TODO:
+pearson correlation
 
