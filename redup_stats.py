@@ -75,22 +75,22 @@ def read_words(infile):
   with open(infile, 'r') as myfile:
     text=myfile.read()
     if 'vms/' in infile:  # ivtt VMS file
-      # preserve punctuation in vms
+      # preserve punctuation and case in vms (v101 is case sensitive)
       # (some punctuation may represent high ascii codes used for rare characters)
       # remove line headers, paragraph markers etc.
       text=re.sub('<[^>]*>',' ',text)
       clean_string=text
     else:
-      text=text.lower() # v101 is case sensitive
+      clean_string=text.lower() # v101 is case sensitive
       # TXB contains strings like "(yoka)l(l)e"
-      clean_string=re.sub('[()]','',text)
-      translator = clean_string.maketrans(string.punctuation, ' '*len(string.punctuation))
+      #clean_string=re.sub('[()]','',text)
+      #translator = clean_string.maketrans(string.punctuation, ' '*len(string.punctuation))
       # replace punctuation with spaces
-      clean_string=clean_string.translate(translator)
+      #clean_string=clean_string.translate(translator)
       # '–' '·' '•' occur repeatedly in TXB and are not in string.punctuation
       # '–' '·' apparently represent sounds or maybe unreadable characters?
       # some characters appearing in LZH
-      clean_string=re.sub('[•– —。；“”、：，]',' ',clean_string)
+      #clean_string=re.sub('[•– —。；“”、：，]',' ',clean_string)
       
     clean_string=' '+clean_string.replace('\n', ' ').replace('\r', ' ')
 
