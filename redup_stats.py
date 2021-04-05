@@ -75,22 +75,12 @@ def read_words(infile):
   with open(infile, 'r') as myfile:
     text=myfile.read()
     if 'vms/' in infile:  # ivtt VMS file
-      # preserve punctuation and case in vms (v101 is case sensitive)
-      # (some punctuation may represent high ascii codes used for rare characters)
+      # preserve case in vms (v101 is case sensitive)
       # remove line headers, paragraph markers etc.
       text=re.sub('<[^>]*>',' ',text)
       clean_string=text
     else:
       clean_string=text.lower() # v101 is case sensitive
-      # TXB contains strings like "(yoka)l(l)e"
-      #clean_string=re.sub('[()]','',text)
-      #translator = clean_string.maketrans(string.punctuation, ' '*len(string.punctuation))
-      # replace punctuation with spaces
-      #clean_string=clean_string.translate(translator)
-      # '–' '·' '•' occur repeatedly in TXB and are not in string.punctuation
-      # '–' '·' apparently represent sounds or maybe unreadable characters?
-      # some characters appearing in LZH
-      #clean_string=re.sub('[•– —。；“”、：，]',' ',clean_string)
       
     clean_string=' '+clean_string.replace('\n', ' ').replace('\r', ' ')
 
@@ -246,7 +236,7 @@ def do_redup_by_rank(files):
   plt.savefig('out/rank_'+fname+'_'+get_time_str()+'.png')
 
 def do_redup_scatter(files):
-  print( "_data_ couples red %red partial %partial triple %triple scr.red scr.%r scr.partial scr.%partial scr.triple scr.%triple")
+  print("_data_ couples red %red partial %part triple %trpl %red+part scr.red scr.%r scr.part scr.%part scr.trpl scr.%trpl")
   tot_couples=0
   tot_red=0
   tot_partial=0
@@ -256,6 +246,8 @@ def do_redup_scatter(files):
     tot_couples+=res[1]
     tot_red+=res[2]
     tot_partial+=res[4]
+    # compute %red+part
+    res=res[0:8]+[res[3]+res[5]]+res[8:]
     allres.append(res)
     print_res_list(res)
   mylog("tot "+str([tot_couples,tot_red,tot_partial]),is_log)
