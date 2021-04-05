@@ -4,8 +4,15 @@ rm /tmp/cham/*
 cp $CHAMDIR/* /tmp/cham
 # remove words in parenthesis from JPN text (they look like alternative spellings)
 sed -e 's/ *([^)]*) */ /g' $CHAMDIR/N-JPN.txt > /tmp/cham/N-JPN.txt
+
 # remove line numbers from Sanskrit file
 sed -e 's/^.\..\...\?.\? / /' $CHAMDIR/N-SAN.txt > /tmp/cham/N-SAN.txt
+
+# remove line numbers, dashes and notes in parenthesis or brakets from Sumerian file
+# … and X denote missing / unreading symbols
+sed -e 's/^[0-9][0-9]*\./ /' $CHAMDIR/N-SUX.txt | tr -d '-' | sed -e 's/ *([^)]*) */ /g' | \
+    sed -e "s/ *\[[^\]]*\] */ /g" | sed -e 's/[…X]/ /g' > /tmp/cham/N-SUX.txt
+    
 # remove spurious ' o ' from EMY Chotli Vocabulario
 sed -e 's/ o / /g' $CHAMDIR/N-EMY.txt > /tmp/cham/N-EMY.txt
 
