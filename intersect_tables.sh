@@ -1,5 +1,6 @@
 #SEC_DIR=sections
-SEC_DIR=sections_unk
+#SEC_DIR=sections_unk
+SEC_DIR=illustrations
 
 echo -n '_ '
 for scr in texts/vms/scribes/*
@@ -12,7 +13,8 @@ done
 echo TOT_section
 echo -n 0 > /tmp/scr_TOT
 
-for sec in EVA_HerbA EVA_Pharma EVA_AstroCZ EVA_HerbB EVA_Q13 EVA_Q20 Unknown
+#for sec in EVA_HerbA EVA_Pharma EVA_AstroCZ EVA_HerbB EVA_Q13 EVA_Q20 Unknown
+for sec in EVA_Herbal EVA_Pharma EVA_AstroCZ EVA_Q13 EVA_Q20 EVA_Text
 do
 secfile=texts/vms/$SEC_DIR/$sec
 TOT=0
