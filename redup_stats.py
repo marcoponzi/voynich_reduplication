@@ -178,7 +178,6 @@ def get_plot_data(records,nx,ny,n_labels):
   
 def scatter_plot(records,nx,ny,x_axis,y_axis,prefix,n_labels,is_corr=False):
   xs,ys,labels,colors,markers=get_plot_data(records,nx,ny,n_labels)
-  print("xs:"+str(len(xs))+ " markers:"+str(len(markers)))
 
   f = plt.figure()
   for i in range(0,len(xs)):
@@ -192,7 +191,6 @@ def scatter_plot(records,nx,ny,x_axis,y_axis,prefix,n_labels,is_corr=False):
   if is_corr:
     regress = scipy.stats.linregress(xs, ys)
     mylog(str(regress), is_log)
-    #plt.plot(x, x*regress.slope + regress.intercept, linestyle='-')
     X_plot = np.linspace(0,1,100)
     plt.plot(X_plot, X_plot*regress.slope + regress.intercept)
     plt.xlabel(x_axis + " (Correlation:"+frmt(regress.rvalue)+ " pvalue:"+frmt(regress.pvalue)+")")
@@ -203,8 +201,6 @@ def scatter_plot(records,nx,ny,x_axis,y_axis,prefix,n_labels,is_corr=False):
   adjust_text(texts, force_points=0.2, force_text=0.2,
             expand_points=(1, 1), expand_text=(1, 1),
             arrowprops=dict(arrowstyle="-", color='#444477', lw=0.5))
-
-
 
   plt.savefig('out/'+prefix+"_"+get_time_str()+'.png')
   
@@ -261,7 +257,6 @@ def proc_files(files):
     tot_couples+=res[1]
     tot_red+=res[2]
     tot_partial+=res[4]
-    # compute %red+part
     res=res[0:8]+[res[3]+res[5]]+res[8:]
     allres.append(res)
     print_res_list(res)
@@ -276,9 +271,9 @@ def do_redup_scatter(files):
   
 def do_correlation(files):
   allres=proc_files(files)
-  prefix="corr_"+re.sub("/[^/]*$","",files[0]).replace('/','_')
-  scatter_plot(allres,3,5,"Full Reduplication %","Partial Reduplication %",prefix,18, True)
-  scatter_plot(allres,5,7,"Partial Reduplication %","Triple Reduplication %","triple"+prefix,15, True)
+  prefix=re.sub("/[^/]*$","",files[0]).replace('/','_')
+  scatter_plot(allres,3,5,"Full Reduplication %","Partial Reduplication %","corr_"+prefix,18, True)
+  #scatter_plot(allres,5,7,"Partial Reduplication %","Triple Reduplication %","corr_triple"+prefix,15, True)
 
 def do_scramble(files):
   allres=list()
@@ -317,5 +312,5 @@ elif sys.argv[1]=='scramble':
 elif sys.argv[1]=='correlation':
   do_correlation(sys.argv[2:])
 else:
-  print("arg1: redup_scatter redup_by_rank scramble")
+  print("arg1: redup_scatter redup_by_rank scramble correlation")
 
