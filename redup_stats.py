@@ -5,6 +5,7 @@ import random
 import string
 import time
 import numpy as np
+import scipy.stats
 from datetime import datetime
 from matplotlib import pyplot as plt
 from adjustText import adjust_text
@@ -145,7 +146,7 @@ def print_res_list(result):
       sys.stdout.write(" "+frmt(result[i]))
   print()
   
-def scatter_plot(records,nx,ny,x_axis,y_axis,prefix,n_labels):
+def get_plot_data(records,nx,ny,n_labels):
   xs=list()
   ys=list()
   for rec in records:
@@ -173,16 +174,30 @@ def scatter_plot(records,nx,ny,x_axis,y_axis,prefix,n_labels):
     else:
       colors.append('#ff9933')
       markers.append('o')
+  return xs,ys,labels,colors,markers
+  
+def scatter_plot(records,nx,ny,x_axis,y_axis,prefix,n_labels,is_corr=False):
+  xs,ys,labels,colors,markers=get_plot_data(records,nx,ny,n_labels)
+  print("xs:"+str(len(xs))+ " markers:"+str(len(markers)))
 
   f = plt.figure()
   for i in range(0,len(xs)):
-    scatter = plt.scatter(xs[i], ys[i], s=80, marker=markers[i], c=colors[i], edgecolors='w')
+    plt.scatter(xs[i], ys[i], s=80, marker=markers[i], c=colors[i], edgecolors='w')
+    #plt.plot(xs[i], ys[i], s=80, marker=markers[i], c=colors[i])
   plt.xlim(0)
   plt.ylim(0)
   texts = []
   for x, y, l in zip(xs, ys, labels):
     texts.append(plt.text(x, y, l))
-  plt.xlabel(x_axis)
+  if is_corr:
+    regress = scipy.stats.linregress(xs, ys)
+    mylog(str(regress), is_log)
+    #plt.plot(x, x*regress.slope + regress.intercept, linestyle='-')
+    X_plot = np.linspace(0,1,100)
+    plt.plot(X_plot, X_plot*regress.slope + regress.intercept)
+    plt.xlabel(x_axis + " (Correlation:"+frmt(regress.rvalue)+ " pvalue:"+frmt(regress.pvalue)+")")
+  else:
+    plt.xlabel(x_axis)
   plt.ylabel(y_axis)
 
   adjust_text(texts, force_points=0.2, force_text=0.2,
@@ -235,7 +250,7 @@ def do_redup_by_rank(files):
             arrowprops=dict(arrowstyle="-", color='#444477', lw=0.5))
   plt.savefig('out/rank_'+fname+'_'+get_time_str()+'.png')
 
-def do_redup_scatter(files):
+def proc_files(files):
   print("_data_ couples red %red partial %part triple %trpl %red+part scr.red scr.%r scr.part scr.%part scr.trpl scr.%trpl")
   tot_couples=0
   tot_red=0
@@ -251,9 +266,19 @@ def do_redup_scatter(files):
     allres.append(res)
     print_res_list(res)
   mylog("tot "+str([tot_couples,tot_red,tot_partial]),is_log)
+  return allres
+
+def do_redup_scatter(files):
+  allres=proc_files(files)
   prefix=re.sub("/[^/]*$","",files[0]).replace('/','_')
-  scatter_plot(allres,3,5,"Full Reduplication %","Partial Reduplication %",prefix,18)
+  scatter_plot(allres,3,5,"Full Reduplication %","Partial Reduplication %","red"+prefix,18)
   scatter_plot(allres,5,7,"Partial Reduplication %","Triple Reduplication %","triple"+prefix,15)
+  
+def do_correlation(files):
+  allres=proc_files(files)
+  prefix="corr_"+re.sub("/[^/]*$","",files[0]).replace('/','_')
+  scatter_plot(allres,3,5,"Full Reduplication %","Partial Reduplication %",prefix,18, True)
+  scatter_plot(allres,5,7,"Partial Reduplication %","Triple Reduplication %","triple"+prefix,15, True)
 
 def do_scramble(files):
   allres=list()
@@ -289,6 +314,8 @@ elif sys.argv[1]=='redup_by_rank':
   do_redup_by_rank(sys.argv[2:])
 elif sys.argv[1]=='scramble':
   do_scramble(sys.argv[2:])
+elif sys.argv[1]=='correlation':
+  do_correlation(sys.argv[2:])
 else:
   print("arg1: redup_scatter redup_by_rank scramble")
 
