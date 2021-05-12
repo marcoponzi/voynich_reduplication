@@ -53,4 +53,7 @@ Correlation plots for scribes and illustrations:
 python3 redup_stats.py correlation texts/vms/scribes/*; xviewer `ls -1 out/corr* | tail -1`
 python3 redup_stats.py correlation texts/vms/illustrations/*; xviewer `ls -1 out/corr* | tail -1`
 
+TODO:
+
+bifolio correlation
 
