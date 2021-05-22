@@ -56,4 +56,5 @@ python3 redup_stats.py correlation texts/vms/illustrations/*; xviewer `ls -1 out
 TODO:
 
 bifolio correlation
+across lines / image breaks
 
