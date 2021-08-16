@@ -76,7 +76,7 @@ done
 
 # "illustrations" splits pages purely by illustration type +I
 $IVTTDIR/ivtt $IVTTDIR/ZL_ivtff_1r.txt -a2 -c5 -h2 -s1 -u1 -@L -f0 +IH > texts/vms/illustrations/EVA_Herbal
-$IVTTDIR/ivtt $IVTTDIR/ZL_ivtff_1r.txt -a2 -c5 -h2 -s1 -u1 -@L -f0 +IT >> texts/vms/illustrations/EVA_Text
+$IVTTDIR/ivtt $IVTTDIR/ZL_ivtff_1r.txt -a2 -c5 -h2 -s1 -u1 -@L -f0 +IT > texts/vms/illustrations/EVA_Text
 
 
 # Unclassifiable pages as separate section
