@@ -95,8 +95,8 @@ $IVTTDIR/ivtt $IVTTDIR/ZL_ivtff_1r.txt -a2 -c5 -h2 -s1 -u1 -@L -f0 +QN +PB >> te
 for text_type in Circular Label Paragraph Radial
 do
 lett=`echo $text_type | grep -o '^.' `
-$IVTTDIR/ivtt $IVTTDIR/ZL_ivtff_1r.txt -a2 -c5 -h2 -s1 -u1 +@$lett -f0 |\
-  grep -Ev '<!|#'|sed -e "s/[{}']//g"| sed -e 's/@[0-9][0-9]\([0-9]\);/\1/g' > texts/vms/text_type/$text_type
+$IVTTDIR/ivtt $IVTTDIR/ZL_ivtff_1r.txt -a2 -c5 -h2 -s1 -u1 +@$lett -f0 > texts/vms/text_type/$text_type
+# Labels are not included in EVA_all and sections/scribes splitted files
 done
   
 for f in texts/vms/all/* texts/vms/sections/* texts/vms/sections_unk/* texts/vms/text_type/* texts/vms/illustrations/*
