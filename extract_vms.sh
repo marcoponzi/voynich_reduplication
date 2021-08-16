@@ -110,5 +110,7 @@ done
 
 source ./extract_scribes.sh texts/vms/all/EVA_all texts/vms/scribes/
 
+source ./intersect_scribes_illustrations.sh
+
 
 
