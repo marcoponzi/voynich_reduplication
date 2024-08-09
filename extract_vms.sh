@@ -39,9 +39,9 @@ echo "" > texts/vms/sections/Unknown
 
 # QA PA f1r; QH PC/D f58r/v
 $IVTTDIR/ivtt $IVTTDIR/ZL_ivtff_1r.txt -a2 -c5 -h2 -s1 -u1 -@L -f0 +QA +PA +LA > texts/vms/sections/EVA_HerbA
+$IVTTDIR/ivtt $IVTTDIR/ZL_ivtff_1r.txt -a2 -c5 -h2 -s1 -u1 -@L -f0 +IH +LA >> texts/vms/sections/EVA_HerbA
 $IVTTDIR/ivtt $IVTTDIR/ZL_ivtff_1r.txt -a2 -c5 -h2 -s1 -u1 -@L -f0 +QH +PC +LA >> texts/vms/sections/EVA_HerbA
 $IVTTDIR/ivtt $IVTTDIR/ZL_ivtff_1r.txt -a2 -c5 -h2 -s1 -u1 -@L -f0 +QH +PD +LA >> texts/vms/sections/EVA_HerbA
-$IVTTDIR/ivtt $IVTTDIR/ZL_ivtff_1r.txt -a2 -c5 -h2 -s1 -u1 -@L -f0 +IH +LA >> texts/vms/sections/EVA_HerbA
 # Unclassifiable pages as separate section
 $IVTTDIR/ivtt $IVTTDIR/ZL_ivtff_1r.txt -a2 -c5 -h2 -s1 -u1 -@L -f0 +QA +PA +LA > texts/vms/sections_unk/Unknown
 $IVTTDIR/ivtt $IVTTDIR/ZL_ivtff_1r.txt -a2 -c5 -h2 -s1 -u1 -@L -f0 +QH +PC +LA >> texts/vms/sections_unk/Unknown
@@ -103,8 +103,8 @@ for f in texts/vms/all/* texts/vms/sections/* texts/vms/sections_unk/* texts/vms
 do
   # convert high ascii bytes to printable characters
   iconv -f Windows-1252 -t utf-8 $f > /tmp/conv
-  # remove comments and ligature wrappings
-  grep -Ev '<!|#' /tmp/conv |sed -e "s/[{}']//g" > /tmp/out
+  # remove comments and ligature wrappings; empty lines; <!doodle, <!mark etc <~>
+  cat /tmp/conv | sed -e 's/<![^>]*>//g' | sed -e 's/<~>//g' | grep -Ev '^<[^>]*> *$|#' |sed -e "s/[{}']//g" > /tmp/out
   mv /tmp/out $f
 done
 
