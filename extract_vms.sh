@@ -40,8 +40,9 @@ echo "" > texts/vms/sections/Unknown
 # QA PA f1r; QH PC/D f58r/v
 $IVTTDIR/ivtt $IVTTDIR/ZL_ivtff_1r.txt -a2 -c5 -h2 -s1 -u1 -@L -f0 +QA +PA +LA > texts/vms/sections/EVA_HerbA
 $IVTTDIR/ivtt $IVTTDIR/ZL_ivtff_1r.txt -a2 -c5 -h2 -s1 -u1 -@L -f0 +IH +LA >> texts/vms/sections/EVA_HerbA
-#$IVTTDIR/ivtt $IVTTDIR/ZL_ivtff_1r.txt -a2 -c5 -h2 -s1 -u1 -@L -f0 +QH +PC +LA >> texts/vms/sections/EVA_HerbA
-#$IVTTDIR/ivtt $IVTTDIR/ZL_ivtff_1r.txt -a2 -c5 -h2 -s1 -u1 -@L -f0 +QH +PD +LA >> texts/vms/sections/EVA_HerbA
+$IVTTDIR/ivtt $IVTTDIR/ZL_ivtff_1r.txt -a2 -c5 -h2 -s1 -u1 -@L -f0 +QH +PC +LA > texts/vms/sections/Unknown
+$IVTTDIR/ivtt $IVTTDIR/ZL_ivtff_1r.txt -a2 -c5 -h2 -s1 -u1 -@L -f0 +QH +PD +LA >> texts/vms/sections/Unknown
+
 # Unclassifiable pages as separate section
 $IVTTDIR/ivtt $IVTTDIR/ZL_ivtff_1r.txt -a2 -c5 -h2 -s1 -u1 -@L -f0 +QA +PA +LA > texts/vms/sections_unk/Unknown
 $IVTTDIR/ivtt $IVTTDIR/ZL_ivtff_1r.txt -a2 -c5 -h2 -s1 -u1 -@L -f0 +QH +PC +LA >> texts/vms/sections_unk/Unknown
