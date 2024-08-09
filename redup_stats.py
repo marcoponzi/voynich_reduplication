@@ -1,6 +1,7 @@
 import re
 import sys
-import Levenshtein
+# [M] 2023.08.20 import Levenshtein
+import editdistance
 import random
 import string
 import time
@@ -30,7 +31,8 @@ def count_redup(words,islog):
 	redup_words=list()
 	partial_words=list()
 	for i in range(0,len(words)-1):
-	  dist=Levenshtein.distance(words[i],words[i+1])
+	  # dist=Levenshtein.distance(words[i],words[i+1])
+	  dist=editdistance.eval(words[i],words[i+1])
 	  if dist==0  :#and len(words[i])>1: # ignore single char reduplication (see TXB)
 	    n_redup+=1
 	    redup_words.append(words[i+1])
